@@ -22,8 +22,8 @@ export default function LoginPage() {
 
     try {
       await signInWithEmailAndPassword(auth, formData.email, formData.password);
-      // Redirect to home page or dashboard after successful login
-      router.push('/');
+      // Redirect to dashboard after successful login
+      router.push('/dashboard/matches');
     } catch (error: any) {
       console.error('Login error:', error);
 
