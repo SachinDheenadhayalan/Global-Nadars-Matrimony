@@ -369,7 +369,7 @@ export default function RegisterPage() {
         updatedAt: new Date().toISOString(),
       });
 
-      alert('Registration successful! You can now log in.');
+      // Registration successful - redirect to dashboard
       router.push('/dashboard/matches');
     } catch (error: any) {
       console.error('Registration error:', error);
