@@ -371,9 +371,10 @@ export default function RegisterPage() {
 
       // Registration successful - redirect to dashboard
       router.push('/dashboard/matches');
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error('Registration error:', error);
-      switch (error.code) {
+      const firebaseError = error as { code?: string };
+      switch (firebaseError.code) {
         case 'auth/email-already-in-use':
           setError('This email is already registered.');
           break;
@@ -486,7 +487,7 @@ export default function RegisterPage() {
         return (
           <div className="space-y-6">
             <div className="text-center mb-8">
-              <h2 className="text-3xl font-bold text-white mb-2">Let's start with your basic information</h2>
+              <h2 className="text-3xl font-bold text-white mb-2">Let&apos;s start with your basic information</h2>
               <p className="text-gray-300">This helps us find the right matches for you</p>
             </div>
 
@@ -728,8 +729,8 @@ export default function RegisterPage() {
                 <option value="" className="bg-gray-800">Select Education Level</option>
                 <option value="High School" className="bg-gray-800">High School</option>
                 <option value="Diploma" className="bg-gray-800">Diploma</option>
-                <option value="Bachelor's Degree" className="bg-gray-800">Bachelor's Degree</option>
-                <option value="Master's Degree" className="bg-gray-800">Master's Degree</option>
+                <option value="Bachelor's Degree" className="bg-gray-800">Bachelor&apos;s Degree</option>
+                <option value="Master's Degree" className="bg-gray-800">Master&apos;s Degree</option>
                 <option value="Doctorate/PhD" className="bg-gray-800">Doctorate/PhD</option>
                 <option value="Professional Degree" className="bg-gray-800">Professional Degree</option>
               </select>
@@ -835,26 +836,26 @@ export default function RegisterPage() {
             </div>
 
             <div>
-              <label className="block text-white mb-2 font-medium">Father's Occupation</label>
+              <label className="block text-white mb-2 font-medium">Father&apos;s Occupation</label>
               <input
                 type="text"
                 name="fatherOccupation"
                 value={formData.fatherOccupation}
                 onChange={handleChange}
                 className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400"
-                placeholder="Enter father's occupation"
+                placeholder="Enter father&apos;s occupation"
               />
             </div>
 
             <div>
-              <label className="block text-white mb-2 font-medium">Mother's Occupation</label>
+              <label className="block text-white mb-2 font-medium">Mother&apos;s Occupation</label>
               <input
                 type="text"
                 name="motherOccupation"
                 value={formData.motherOccupation}
                 onChange={handleChange}
                 className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400"
-                placeholder="Enter mother's occupation"
+                placeholder="Enter mother&apos;s occupation"
               />
             </div>
 
