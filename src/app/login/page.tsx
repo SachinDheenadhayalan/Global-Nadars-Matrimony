@@ -24,11 +24,12 @@ export default function LoginPage() {
       await signInWithEmailAndPassword(auth, formData.email, formData.password);
       // Redirect to dashboard after successful login
       router.push('/dashboard/matches');
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error('Login error:', error);
+      const firebaseError = error as { code?: string };
 
       // Provide user-friendly error messages
-      switch (error.code) {
+      switch (firebaseError.code) {
         case 'auth/invalid-email':
           setError('Invalid email address.');
           break;
@@ -117,7 +118,7 @@ export default function LoginPage() {
 
           <div className="mt-6 text-center">
             <p className="text-gray-300">
-              Don't have an account?{' '}
+              Don&apos;t have an account?{' '}
               <Link href="/register" className="text-blue-400 hover:text-blue-300 font-semibold">
                 Register Now
               </Link>
