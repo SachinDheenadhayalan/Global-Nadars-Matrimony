@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "content": "Analyze dashboard functionality from screenshots",
+    "status": "in_progress",
+    "activeForm": "Analyzing screenshots"
+  },
+  {
+    "content": "Create Matches, Search, and Notifications pages",
+    "status": "pending",
+    "activeForm": "Creating dashboard pages"
+  },
+  {
+    "content": "Update login/register redirects to dashboard",
+    "status": "pending",
+    "activeForm": "Updating redirects"
+  }
+]
