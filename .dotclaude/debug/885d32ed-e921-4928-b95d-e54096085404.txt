@@ -5546,3 +5546,4 @@ EOF
 [DEBUG] Applied original permissions to temp file
 [DEBUG] Renaming /home/vibecode/.claude.json.tmp.202.1760391913283 to /home/vibecode/.claude.json
 [DEBUG] File /home/vibecode/.claude.json written atomically
+[DEBUG] Metrics export disabled by organization setting
