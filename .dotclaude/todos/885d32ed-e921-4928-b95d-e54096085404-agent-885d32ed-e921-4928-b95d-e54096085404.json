@@ -1,41 +1,56 @@
 [
   {
-    "content": "Fetch and analyze the matrimony website structure and functionality",
+    "content": "Analyze matrimony and sportsbook website designs",
+    "status": "completed",
+    "activeForm": "Analyzing matrimony and sportsbook website designs"
+  },
+  {
+    "content": "Create global styles with sportsbook gradients",
     "status": "in_progress",
-    "activeForm": "Fetching and analyzing matrimony website"
+    "activeForm": "Creating global styles with sportsbook gradients"
   },
   {
-    "content": "Fetch and analyze the sportsbook website styling (especially gradients)",
+    "content": "Create layout with header and footer",
     "status": "pending",
-    "activeForm": "Fetching and analyzing sportsbook website styling"
+    "activeForm": "Creating layout with header and footer"
   },
   {
-    "content": "Set up project structure with React/Next.js or appropriate framework",
+    "content": "Create Home page",
     "status": "pending",
-    "activeForm": "Setting up project structure"
+    "activeForm": "Creating Home page"
   },
   {
-    "content": "Create main layout with sportsbook-inspired styling",
+    "content": "Create About Us page",
     "status": "pending",
-    "activeForm": "Creating main layout"
+    "activeForm": "Creating About Us page"
   },
   {
-    "content": "Implement all pages from matrimony website with English text",
+    "content": "Create Gallery page",
     "status": "pending",
-    "activeForm": "Implementing pages with English text"
+    "activeForm": "Creating Gallery page"
   },
   {
-    "content": "Create login/registration page with sportsbook styling",
+    "content": "Create Members page",
     "status": "pending",
-    "activeForm": "Creating login/registration page"
+    "activeForm": "Creating Members page"
   },
   {
-    "content": "Apply gradient styling throughout the application",
+    "content": "Create Contact Us page",
     "status": "pending",
-    "activeForm": "Applying gradient styling"
+    "activeForm": "Creating Contact Us page"
   },
   {
-    "content": "Prepare Firebase integration structure for later",
+    "content": "Create Login page",
+    "status": "pending",
+    "activeForm": "Creating Login page"
+  },
+  {
+    "content": "Create Registration page",
+    "status": "pending",
+    "activeForm": "Creating Registration page"
+  },
+  {
+    "content": "Prepare Firebase integration structure",
     "status": "pending",
     "activeForm": "Preparing Firebase integration structure"
   }
