@@ -11,12 +11,12 @@
   },
   {
     "content": "Replace img tag with Next.js Image component in register page",
-    "status": "in_progress",
+    "status": "completed",
     "activeForm": "Replacing img tag with Image component"
   },
   {
     "content": "Test build and push fixes to GitHub",
-    "status": "pending",
+    "status": "in_progress",
     "activeForm": "Testing build and pushing fixes"
   }
 ]
