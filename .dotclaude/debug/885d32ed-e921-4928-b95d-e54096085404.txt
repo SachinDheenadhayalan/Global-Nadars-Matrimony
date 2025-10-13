@@ -1,0 +1,154 @@
+[DEBUG] Watching for changes in setting files /home/vibecode/.claude/settings.json...
+[DEBUG] Writing to temp file: /home/vibecode/.claude/settings.json.tmp.202.1760383577151
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 209 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude/settings.json.tmp.202.1760383577151 to /home/vibecode/.claude/settings.json
+[DEBUG] File /home/vibecode/.claude/settings.json written atomically
+[DEBUG] Writing to temp file: /home/vibecode/.claude.json.tmp.202.1760383577159
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1214 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude.json.tmp.202.1760383577159 to /home/vibecode/.claude.json
+[DEBUG] File /home/vibecode/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/vibecode/.claude.json.tmp.202.1760383577163
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1251 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude.json.tmp.202.1760383577163 to /home/vibecode/.claude.json
+[DEBUG] File /home/vibecode/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/vibecode/.claude.json.tmp.202.1760383577179
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1251 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude.json.tmp.202.1760383577179 to /home/vibecode/.claude.json
+[DEBUG] File /home/vibecode/.claude.json written atomically
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] Creating shell snapshot for bash (/bin/bash)
+[DEBUG] Looking for shell config file: /home/vibecode/.bashrc
+[DEBUG] Snapshots directory: /home/vibecode/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /home/vibecode/.claude/shell-snapshots/snapshot-bash-1760383577449-ft1aaf.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /home/vibecode/.claude/todos/885d32ed-e921-4928-b95d-e54096085404-agent-885d32ed-e921-4928-b95d-e54096085404.json.tmp.202.1760383577464
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /home/vibecode/.claude/todos/885d32ed-e921-4928-b95d-e54096085404-agent-885d32ed-e921-4928-b95d-e54096085404.json.tmp.202.1760383577464 to /home/vibecode/.claude/todos/885d32ed-e921-4928-b95d-e54096085404-agent-885d32ed-e921-4928-b95d-e54096085404.json
+[DEBUG] File /home/vibecode/.claude/todos/885d32ed-e921-4928-b95d-e54096085404-agent-885d32ed-e921-4928-b95d-e54096085404.json written atomically
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/vibecode/.claude/skills, project=/home/vibecode/workspace/.claude/skills
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Writing to temp file: /home/vibecode/.claude.json.tmp.202.1760383577550
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1251 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude.json.tmp.202.1760383577550 to /home/vibecode/.claude.json
+[DEBUG] File /home/vibecode/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/vibecode/.claude.json.tmp.202.1760383577575
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1315 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude.json.tmp.202.1760383577575 to /home/vibecode/.claude.json
+[DEBUG] File /home/vibecode/.claude.json written atomically
+[DEBUG] Executing hooks for SessionStart:startup
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/vibecode/.claude.json.tmp.202.1760383577733
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1315 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude.json.tmp.202.1760383577733 to /home/vibecode/.claude.json
+[DEBUG] File /home/vibecode/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/vibecode/.claude.json.tmp.202.1760383577739
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1351 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude.json.tmp.202.1760383577739 to /home/vibecode/.claude.json
+[DEBUG] File /home/vibecode/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] performStartupChecks called, ENABLE_PLUGINS=true
+[DEBUG] Trust not accepted for current directory - skipping plugin installations
+[DEBUG] Writing to temp file: /home/vibecode/.claude.json.tmp.202.1760383577776
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1459 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude.json.tmp.202.1760383577776 to /home/vibecode/.claude.json
+[DEBUG] File /home/vibecode/.claude.json written atomically
+[DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+[DEBUG] Ripgrep first use test: PASSED (mode=system, path=rg)
+[DEBUG] Shell snapshot created successfully (1655 bytes)
+[DEBUG] Writing to temp file: /home/vibecode/.claude.json.tmp.202.1760383578054
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 31127 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude.json.tmp.202.1760383578054 to /home/vibecode/.claude.json
+[DEBUG] File /home/vibecode/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/vibecode/.claude.json.tmp.202.1760383578062
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 31127 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude.json.tmp.202.1760383578062 to /home/vibecode/.claude.json
+[DEBUG] File /home/vibecode/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/vibecode/.claude.json.tmp.202.1760383578072
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 31157 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude.json.tmp.202.1760383578072 to /home/vibecode/.claude.json
+[DEBUG] File /home/vibecode/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Added snapshot for 3ecf012b-9aa4-4848-a5e7-d27080ac4cc6, tracking 0 files
+[DEBUG] Writing to temp file: /home/vibecode/.claude.json.tmp.202.1760383764413
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 31202 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude.json.tmp.202.1760383764413 to /home/vibecode/.claude.json
+[DEBUG] File /home/vibecode/.claude.json written atomically
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/vibecode/.claude/todos/885d32ed-e921-4928-b95d-e54096085404-agent-885d32ed-e921-4928-b95d-e54096085404.json.tmp.202.1760383773880
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1336 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude/todos/885d32ed-e921-4928-b95d-e54096085404-agent-885d32ed-e921-4928-b95d-e54096085404.json.tmp.202.1760383773880 to /home/vibecode/.claude/todos/885d32ed-e921-4928-b95d-e54096085404-agent-885d32ed-e921-4928-b95d-e54096085404.json
+[DEBUG] File /home/vibecode/.claude/todos/885d32ed-e921-4928-b95d-e54096085404-agent-885d32ed-e921-4928-b95d-e54096085404.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: WebFetch
+[DEBUG] Executing hooks for PreToolUse:WebFetch
+[DEBUG] Getting matching hook commands for PreToolUse with query: WebFetch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: WebFetch
+[DEBUG] Executing hooks for PreToolUse:WebFetch
+[DEBUG] Getting matching hook commands for PreToolUse with query: WebFetch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute

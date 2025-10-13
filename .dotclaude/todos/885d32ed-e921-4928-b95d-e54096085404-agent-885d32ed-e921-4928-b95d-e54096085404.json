@@ -1,0 +1,42 @@
+[
+  {
+    "content": "Fetch and analyze the matrimony website structure and functionality",
+    "status": "in_progress",
+    "activeForm": "Fetching and analyzing matrimony website"
+  },
+  {
+    "content": "Fetch and analyze the sportsbook website styling (especially gradients)",
+    "status": "pending",
+    "activeForm": "Fetching and analyzing sportsbook website styling"
+  },
+  {
+    "content": "Set up project structure with React/Next.js or appropriate framework",
+    "status": "pending",
+    "activeForm": "Setting up project structure"
+  },
+  {
+    "content": "Create main layout with sportsbook-inspired styling",
+    "status": "pending",
+    "activeForm": "Creating main layout"
+  },
+  {
+    "content": "Implement all pages from matrimony website with English text",
+    "status": "pending",
+    "activeForm": "Implementing pages with English text"
+  },
+  {
+    "content": "Create login/registration page with sportsbook styling",
+    "status": "pending",
+    "activeForm": "Creating login/registration page"
+  },
+  {
+    "content": "Apply gradient styling throughout the application",
+    "status": "pending",
+    "activeForm": "Applying gradient styling"
+  },
+  {
+    "content": "Prepare Firebase integration structure for later",
+    "status": "pending",
+    "activeForm": "Preparing Firebase integration structure"
+  }
+]
