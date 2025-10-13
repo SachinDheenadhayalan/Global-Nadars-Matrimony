@@ -159,11 +159,7 @@ export default function RegisterPage() {
         }
         return true;
 
-      case 1: // Profile Photo
-        if (!photoFile) {
-          setError('Please upload a profile photo');
-          return false;
-        }
+      case 1: // Profile Photo (optional, always valid)
         return true;
 
       case 2: // Basic Information

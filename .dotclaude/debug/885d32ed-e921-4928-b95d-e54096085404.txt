@@ -2840,3 +2840,108 @@
 [DEBUG] File /home/vibecode/.claude.json written atomically
 [DEBUG] Metrics export disabled by organization setting
 [DEBUG] Failed to check metrics opt-out status: Request failed with status code 401
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message ac39e959-9d27-46a1-9a6d-038eb74552de
+[DEBUG] FileHistory: Added snapshot for ac39e959-9d27-46a1-9a6d-038eb74552de, tracking 18 files
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/vibecode/.claude/todos/885d32ed-e921-4928-b95d-e54096085404-agent-885d32ed-e921-4928-b95d-e54096085404.json.tmp.202.1760387542231
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 136 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude/todos/885d32ed-e921-4928-b95d-e54096085404-agent-885d32ed-e921-4928-b95d-e54096085404.json.tmp.202.1760387542231 to /home/vibecode/.claude/todos/885d32ed-e921-4928-b95d-e54096085404-agent-885d32ed-e921-4928-b95d-e54096085404.json
+[DEBUG] File /home/vibecode/.claude/todos/885d32ed-e921-4928-b95d-e54096085404-agent-885d32ed-e921-4928-b95d-e54096085404.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/vibecode/workspace/src/app/register/page.tsx.tmp.202.1760387549033
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 53603 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/workspace/src/app/register/page.tsx.tmp.202.1760387549033 to /home/vibecode/workspace/src/app/register/page.tsx
+[DEBUG] File /home/vibecode/workspace/src/app/register/page.tsx written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/vibecode/.claude/todos/885d32ed-e921-4928-b95d-e54096085404-agent-885d32ed-e921-4928-b95d-e54096085404.json.tmp.202.1760387554200
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude/todos/885d32ed-e921-4928-b95d-e54096085404-agent-885d32ed-e921-4928-b95d-e54096085404.json.tmp.202.1760387554200 to /home/vibecode/.claude/todos/885d32ed-e921-4928-b95d-e54096085404-agent-885d32ed-e921-4928-b95d-e54096085404.json
+[DEBUG] File /home/vibecode/.claude/todos/885d32ed-e921-4928-b95d-e54096085404-agent-885d32ed-e921-4928-b95d-e54096085404.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /home/vibecode/.claude.json.tmp.202.1760387560433
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 38303 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude.json.tmp.202.1760387560433 to /home/vibecode/.claude.json
+[DEBUG] File /home/vibecode/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/vibecode/.claude.json.tmp.202.1760387560470
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 38303 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude.json.tmp.202.1760387560470 to /home/vibecode/.claude.json
+[DEBUG] File /home/vibecode/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/vibecode/.claude.json.tmp.202.1760387560475
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 38405 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude.json.tmp.202.1760387560475 to /home/vibecode/.claude.json
+[DEBUG] File /home/vibecode/.claude.json written atomically
