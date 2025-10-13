@@ -16,13 +16,13 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/register"
-              className="enhanced-button px-8 py-4 bg-blue-500 text-white rounded-full text-lg font-semibold hover:bg-blue-600 transition-all"
+              className="enhanced-button px-8 py-4 bg-gradient-to-br from-blue-400 to-purple-500 text-white rounded-full text-lg font-semibold hover:opacity-90 transition-all"
             >
               Register Now
             </Link>
             <Link
               href="/login"
-              className="enhanced-button px-8 py-4 bg-purple-500 text-white rounded-full text-lg font-semibold hover:bg-purple-600 transition-all"
+              className="enhanced-button px-8 py-4 bg-gradient-to-br from-blue-400 to-purple-500 text-white rounded-full text-lg font-semibold hover:opacity-90 transition-all"
             >
               Login
             </Link>
@@ -118,7 +118,7 @@ export default function Home() {
           </p>
           <Link
             href="/register"
-            className="enhanced-button inline-block px-10 py-5 bg-white text-blue-900 rounded-full text-lg font-bold hover:bg-gray-100 transition-all"
+            className="enhanced-button inline-block px-10 py-5 bg-gradient-to-br from-blue-400 to-purple-500 text-white rounded-full text-lg font-bold hover:opacity-90 transition-all"
           >
             Get Started Now
           </Link>

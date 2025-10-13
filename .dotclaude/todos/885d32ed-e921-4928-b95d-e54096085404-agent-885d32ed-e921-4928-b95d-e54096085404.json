@@ -6,12 +6,12 @@
   },
   {
     "content": "Add gradient to CTA buttons (Login, Register, Get Started)",
-    "status": "in_progress",
+    "status": "completed",
     "activeForm": "Adding gradient to buttons"
   },
   {
     "content": "Add background to header on scroll",
-    "status": "pending",
+    "status": "in_progress",
     "activeForm": "Adding scroll background to header"
   },
   {
