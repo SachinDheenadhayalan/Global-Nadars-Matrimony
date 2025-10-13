@@ -16,12 +16,12 @@
   },
   {
     "content": "Set up Firebase Authentication in register page",
-    "status": "in_progress",
+    "status": "completed",
     "activeForm": "Setting up registration"
   },
   {
-    "content": "Test Firebase authentication flow",
-    "status": "pending",
-    "activeForm": "Testing Firebase integration"
+    "content": "Create Firebase setup documentation",
+    "status": "in_progress",
+    "activeForm": "Creating setup documentation"
   }
 ]

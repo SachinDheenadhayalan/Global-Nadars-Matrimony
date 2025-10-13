@@ -2,8 +2,13 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
+import { doc, setDoc } from 'firebase/firestore';
+import { auth, db } from '@/lib/firebase';
 
 export default function RegisterPage() {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -13,17 +18,89 @@ export default function RegisterPage() {
     gender: '',
     dateOfBirth: '',
   });
+  const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setError('');
 
     if (formData.password !== formData.confirmPassword) {
-      alert('Passwords do not match!');
+      setError('Passwords do not match!');
       return;
     }
 
-    // Will be connected to Firebase later
-    alert('Registration functionality will be connected to Firebase soon!\n\nNote: Additional registration fields (education, profession, family details, etc.) will be added after Firebase integration.');
+    if (formData.password.length < 6) {
+      setError('Password must be at least 6 characters long.');
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      // Create user with email and password
+      const userCredential = await createUserWithEmailAndPassword(
+        auth,
+        formData.email,
+        formData.password
+      );
+
+      // Update user profile with display name
+      await updateProfile(userCredential.user, {
+        displayName: formData.fullName,
+      });
+
+      // Calculate age from date of birth
+      const birthDate = new Date(formData.dateOfBirth);
+      const today = new Date();
+      let age = today.getFullYear() - birthDate.getFullYear();
+      const monthDiff = today.getMonth() - birthDate.getMonth();
+      if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+      }
+
+      // Store additional user data in Firestore
+      await setDoc(doc(db, 'users', userCredential.user.uid), {
+        uid: userCredential.user.uid,
+        fullName: formData.fullName,
+        email: formData.email,
+        mobile: formData.mobile,
+        gender: formData.gender,
+        dateOfBirth: formData.dateOfBirth,
+        age: age,
+        profileStatus: 'pending',
+        isActive: true,
+        isPremium: false,
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString(),
+      });
+
+      // Show success message and redirect
+      alert('Registration successful! You can now log in.');
+      router.push('/login');
+    } catch (error: any) {
+      console.error('Registration error:', error);
+
+      // Provide user-friendly error messages
+      switch (error.code) {
+        case 'auth/email-already-in-use':
+          setError('This email is already registered. Please log in instead.');
+          break;
+        case 'auth/invalid-email':
+          setError('Invalid email address.');
+          break;
+        case 'auth/operation-not-allowed':
+          setError('Email/password registration is not enabled.');
+          break;
+        case 'auth/weak-password':
+          setError('Password is too weak. Please use a stronger password.');
+          break;
+        default:
+          setError('Registration failed. Please try again.');
+      }
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
@@ -43,6 +120,12 @@ export default function RegisterPage() {
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-6">
+            {error && (
+              <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-4">
+                <p className="text-red-400 text-sm">{error}</p>
+              </div>
+            )}
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="fullName" className="block text-white mb-2 font-medium">
@@ -55,7 +138,8 @@ export default function RegisterPage() {
                   value={formData.fullName}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400 transition-colors"
+                  disabled={loading}
+                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400 transition-colors disabled:opacity-50"
                   placeholder="Enter your full name"
                 />
               </div>
@@ -71,7 +155,8 @@ export default function RegisterPage() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400 transition-colors"
+                  disabled={loading}
+                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400 transition-colors disabled:opacity-50"
                   placeholder="Enter your email"
                 />
               </div>
@@ -89,7 +174,8 @@ export default function RegisterPage() {
                   value={formData.mobile}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400 transition-colors"
+                  disabled={loading}
+                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400 transition-colors disabled:opacity-50"
                   placeholder="Enter your mobile number"
                 />
               </div>
@@ -104,7 +190,8 @@ export default function RegisterPage() {
                   value={formData.gender}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-blue-400 transition-colors"
+                  disabled={loading}
+                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-blue-400 transition-colors disabled:opacity-50"
                 >
                   <option value="">Select gender</option>
                   <option value="male">Male</option>
@@ -124,7 +211,8 @@ export default function RegisterPage() {
                 value={formData.dateOfBirth}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-blue-400 transition-colors"
+                disabled={loading}
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-blue-400 transition-colors disabled:opacity-50"
               />
             </div>
 
@@ -141,7 +229,8 @@ export default function RegisterPage() {
                   onChange={handleChange}
                   required
                   minLength={6}
-                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400 transition-colors"
+                  disabled={loading}
+                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400 transition-colors disabled:opacity-50"
                   placeholder="Create a password"
                 />
               </div>
@@ -158,7 +247,8 @@ export default function RegisterPage() {
                   onChange={handleChange}
                   required
                   minLength={6}
-                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400 transition-colors"
+                  disabled={loading}
+                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400 transition-colors disabled:opacity-50"
                   placeholder="Confirm your password"
                 />
               </div>
@@ -166,20 +256,21 @@ export default function RegisterPage() {
 
             <div className="bg-blue-500/10 border border-blue-400/30 rounded-lg p-4">
               <p className="text-sm text-blue-300">
-                <strong>Note:</strong> After Firebase integration, additional fields will be added:
+                <strong>Note:</strong> After creating your account, you can add more details:
                 <br />• Education & Profession
                 <br />• Family Details
                 <br />• Physical Attributes
-                <br />• Location & Contact Preferences
+                <br />• Location & Preferences
                 <br />• Partner Preferences
               </p>
             </div>
 
             <button
               type="submit"
-              className="w-full px-8 py-4 bg-gradient-to-br from-blue-400 to-purple-500 text-white rounded-full font-semibold hover:opacity-90 transition-all enhanced-button"
+              disabled={loading}
+              className="w-full px-8 py-4 bg-gradient-to-br from-blue-400 to-purple-500 text-white rounded-full font-semibold hover:opacity-90 transition-all enhanced-button disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              Register Now
+              {loading ? 'Creating Account...' : 'Register Now'}
             </button>
           </form>
 
@@ -200,8 +291,8 @@ export default function RegisterPage() {
         </div>
 
         <div className="mt-6 glass-card p-4">
-          <p className="text-sm text-center text-yellow-400">
-            🔒 Firebase authentication and extended registration form will be integrated in the next phase
+          <p className="text-sm text-center text-green-400">
+            ✅ Firebase authentication is now active!
           </p>
         </div>
       </div>
