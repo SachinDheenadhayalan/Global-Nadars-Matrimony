@@ -6,13 +6,18 @@
   },
   {
     "content": "Create global styles with sportsbook gradients",
-    "status": "in_progress",
+    "status": "completed",
     "activeForm": "Creating global styles with sportsbook gradients"
   },
   {
-    "content": "Create layout with header and footer",
+    "content": "Create Header component",
+    "status": "in_progress",
+    "activeForm": "Creating Header component"
+  },
+  {
+    "content": "Create Footer component",
     "status": "pending",
-    "activeForm": "Creating layout with header and footer"
+    "activeForm": "Creating Footer component"
   },
   {
     "content": "Create Home page",
