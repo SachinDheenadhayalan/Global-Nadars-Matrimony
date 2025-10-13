@@ -177,7 +177,7 @@ export default function RegisterPage() {
 
             <button
               type="submit"
-              className="w-full px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full font-semibold hover:from-blue-600 hover:to-purple-600 transition-all enhanced-button"
+              className="w-full px-8 py-4 bg-gradient-to-br from-blue-400 to-purple-500 text-white rounded-full font-semibold hover:opacity-90 transition-all enhanced-button"
             >
               Register Now
             </button>
