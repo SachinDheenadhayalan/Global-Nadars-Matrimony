@@ -1,22 +1,12 @@
 [
   {
-    "content": "Fix TypeScript 'any' type errors in login and register pages",
-    "status": "completed",
-    "activeForm": "Fixing TypeScript 'any' type errors"
-  },
-  {
-    "content": "Fix unescaped apostrophes in login and register pages",
-    "status": "completed",
-    "activeForm": "Fixing unescaped apostrophes"
-  },
-  {
-    "content": "Replace img tag with Next.js Image component in register page",
-    "status": "completed",
-    "activeForm": "Replacing img tag with Image component"
+    "content": "Fix ESLint errors in contact, matches, notifications, profile, and search pages",
+    "status": "in_progress",
+    "activeForm": "Fixing remaining ESLint errors"
   },
   {
     "content": "Test build and push fixes to GitHub",
-    "status": "in_progress",
+    "status": "pending",
     "activeForm": "Testing build and pushing fixes"
   }
 ]
