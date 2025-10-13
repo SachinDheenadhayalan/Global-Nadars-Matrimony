@@ -400,7 +400,7 @@ export default function RegisterPage() {
           <div className="space-y-6">
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold text-white mb-2">Create Your Account</h2>
-              <p className="text-gray-300">Let's get started with your email and password</p>
+              <p className="text-gray-300">Let&apos;s get started with your email and password</p>
             </div>
 
             <div>
