@@ -361,7 +361,7 @@ export default function RegisterPage() {
           </div>
         );
 
-      case 1: // Basic Information
+      case 2: // Basic Information
         return (
           <div className="space-y-6">
             <div className="text-center mb-8">
@@ -488,60 +488,10 @@ export default function RegisterPage() {
                 ))}
               </div>
             </div>
-
-            {/* Email and Password */}
-            <div className="pt-6 border-t border-white/10">
-              <h3 className="text-xl font-semibold text-white mb-4">Account Credentials</h3>
-
-              <div className="space-y-4">
-                <div>
-                  <label className="block text-white mb-2 font-medium">Email *</label>
-                  <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400"
-                    placeholder="Enter your email"
-                  />
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-white mb-2 font-medium">Password *</label>
-                    <input
-                      type="password"
-                      name="password"
-                      value={formData.password}
-                      onChange={handleChange}
-                      required
-                      minLength={6}
-                      className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400"
-                      placeholder="Create password"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-white mb-2 font-medium">Confirm Password *</label>
-                    <input
-                      type="password"
-                      name="confirmPassword"
-                      value={formData.confirmPassword}
-                      onChange={handleChange}
-                      required
-                      minLength={6}
-                      className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400"
-                      placeholder="Confirm password"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         );
 
-      case 2: // Location
+      case 3: // Location
         return (
           <div className="space-y-6">
             <div className="text-center mb-8">
@@ -637,7 +587,7 @@ export default function RegisterPage() {
           </div>
         );
 
-      case 3: // Education & Career
+      case 4: // Education & Career
         return (
           <div className="space-y-6">
             <div className="text-center mb-8">
@@ -735,7 +685,7 @@ export default function RegisterPage() {
           </div>
         );
 
-      case 4: // Family Details
+      case 5: // Family Details
         return (
           <div className="space-y-6">
             <div className="text-center mb-8">
