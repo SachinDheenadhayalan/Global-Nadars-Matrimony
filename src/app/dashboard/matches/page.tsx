@@ -38,7 +38,7 @@ const DUMMY_PROFILES = [
     city: 'Mumbai',
     state: 'Maharashtra',
     occupation: 'Teacher',
-    occupationDetails: 'St. Mary's School',
+    occupationDetails: 'St. Mary School',
     photoURL: null
   },
   {
