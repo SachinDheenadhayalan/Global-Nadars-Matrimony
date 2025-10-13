@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import { doc, setDoc } from 'firebase/firestore';
@@ -454,9 +455,9 @@ export default function RegisterPage() {
             </div>
 
             <div className="flex flex-col items-center space-y-6">
-              <div className="w-full max-w-md aspect-square border-2 border-dashed border-white/20 rounded-2xl flex items-center justify-center bg-white/5">
+              <div className="w-full max-w-md aspect-square border-2 border-dashed border-white/20 rounded-2xl flex items-center justify-center bg-white/5 relative overflow-hidden">
                 {photoPreview ? (
-                  <img src={photoPreview} alt="Preview" className="w-full h-full object-cover rounded-2xl" />
+                  <Image src={photoPreview} alt="Preview" fill className="object-cover rounded-2xl" />
                 ) : (
                   <div className="text-center">
                     <svg className="w-24 h-24 mx-auto text-gray-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
