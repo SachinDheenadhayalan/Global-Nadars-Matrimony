@@ -758,7 +758,7 @@ export default function RegisterPage() {
           </div>
         );
 
-      case 5: // Cultural Information
+      case 6: // Cultural Information
         return (
           <div className="space-y-6">
             <div className="text-center mb-8">
@@ -862,7 +862,7 @@ export default function RegisterPage() {
           </div>
         );
 
-      case 6: // Lifestyle
+      case 7: // Lifestyle
         return (
           <div className="space-y-6">
             <div className="text-center mb-8">
@@ -944,7 +944,7 @@ export default function RegisterPage() {
           </div>
         );
 
-      case 7: // Partner Preferences
+      case 8: // Partner Preferences
         return (
           <div className="space-y-6">
             <div className="text-center mb-8">
