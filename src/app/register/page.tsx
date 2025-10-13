@@ -370,7 +370,7 @@ export default function RegisterPage() {
       });
 
       alert('Registration successful! You can now log in.');
-      router.push('/login');
+      router.push('/dashboard/matches');
     } catch (error: any) {
       console.error('Registration error:', error);
       switch (error.code) {
