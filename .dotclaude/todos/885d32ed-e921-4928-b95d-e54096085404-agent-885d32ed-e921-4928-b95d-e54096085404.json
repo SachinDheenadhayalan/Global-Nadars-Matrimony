@@ -1,17 +1,17 @@
 [
   {
     "content": "Fix TypeScript 'any' type errors in login and register pages",
-    "status": "in_progress",
+    "status": "completed",
     "activeForm": "Fixing TypeScript 'any' type errors"
   },
   {
     "content": "Fix unescaped apostrophes in login and register pages",
-    "status": "pending",
+    "status": "completed",
     "activeForm": "Fixing unescaped apostrophes"
   },
   {
     "content": "Replace img tag with Next.js Image component in register page",
-    "status": "pending",
+    "status": "in_progress",
     "activeForm": "Replacing img tag with Image component"
   },
   {
