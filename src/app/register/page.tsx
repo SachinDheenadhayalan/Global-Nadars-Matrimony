@@ -29,7 +29,7 @@ export default function RegisterPage() {
   const [photoPreview, setPhotoPreview] = useState<string | null>(null);
 
   const [formData, setFormData] = useState({
-    // Auth
+    // Auth (moved to step 0)
     email: '',
     password: '',
     confirmPassword: '',
