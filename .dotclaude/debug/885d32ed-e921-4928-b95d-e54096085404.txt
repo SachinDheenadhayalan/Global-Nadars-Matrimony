@@ -4993,3 +4993,6 @@
 [DEBUG] Found 0 hook matchers in settings
 [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
 [DEBUG] Found 0 hook commands to execute
+[DEBUG] Bash tool invoked with command: npm run build 2>&1 | tail -50
+[DEBUG] Bash tool description: Run build and show more detailed error
+[DEBUG] Bash tool timeout: 300000ms
