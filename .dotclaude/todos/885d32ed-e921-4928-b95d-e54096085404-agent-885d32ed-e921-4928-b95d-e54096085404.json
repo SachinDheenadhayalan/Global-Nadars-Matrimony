@@ -1,12 +1,12 @@
 [
   {
     "content": "Install Firebase SDK package",
-    "status": "in_progress",
+    "status": "completed",
     "activeForm": "Installing Firebase SDK"
   },
   {
     "content": "Update Firebase configuration with credentials",
-    "status": "pending",
+    "status": "in_progress",
     "activeForm": "Updating Firebase config"
   },
   {
