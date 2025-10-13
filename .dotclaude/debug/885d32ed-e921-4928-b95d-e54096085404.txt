@@ -4695,3 +4695,176 @@
 [DEBUG] Found 0 hook commands to execute
 [DEBUG] Slash commands included in SlashCommand tool:
 [DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/vibecode/workspace/src/app/dashboard/notifications/page.tsx.tmp.202.1760391351013
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 11590 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/workspace/src/app/dashboard/notifications/page.tsx.tmp.202.1760391351013 to /home/vibecode/workspace/src/app/dashboard/notifications/page.tsx
+[DEBUG] File /home/vibecode/workspace/src/app/dashboard/notifications/page.tsx written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/vibecode/workspace/src/app/dashboard/notifications/page.tsx.tmp.202.1760391351079
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 11598 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/workspace/src/app/dashboard/notifications/page.tsx.tmp.202.1760391351079 to /home/vibecode/workspace/src/app/dashboard/notifications/page.tsx
+[DEBUG] File /home/vibecode/workspace/src/app/dashboard/notifications/page.tsx written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/vibecode/workspace/src/app/dashboard/profile/[id]/page.tsx.tmp.202.1760391351220
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 16970 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/workspace/src/app/dashboard/profile/[id]/page.tsx.tmp.202.1760391351220 to /home/vibecode/workspace/src/app/dashboard/profile/[id]/page.tsx
+[DEBUG] File /home/vibecode/workspace/src/app/dashboard/profile/[id]/page.tsx written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/vibecode/workspace/src/app/dashboard/profile/[id]/page.tsx.tmp.202.1760391351372
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 17042 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/workspace/src/app/dashboard/profile/[id]/page.tsx.tmp.202.1760391351372 to /home/vibecode/workspace/src/app/dashboard/profile/[id]/page.tsx
+[DEBUG] File /home/vibecode/workspace/src/app/dashboard/profile/[id]/page.tsx written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/vibecode/workspace/src/app/dashboard/profile/[id]/page.tsx.tmp.202.1760391351538
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 17069 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/workspace/src/app/dashboard/profile/[id]/page.tsx.tmp.202.1760391351538 to /home/vibecode/workspace/src/app/dashboard/profile/[id]/page.tsx
+[DEBUG] File /home/vibecode/workspace/src/app/dashboard/profile/[id]/page.tsx written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/vibecode/workspace/src/app/dashboard/profile/[id]/page.tsx.tmp.202.1760391351742
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 17079 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/workspace/src/app/dashboard/profile/[id]/page.tsx.tmp.202.1760391351742 to /home/vibecode/workspace/src/app/dashboard/profile/[id]/page.tsx
+[DEBUG] File /home/vibecode/workspace/src/app/dashboard/profile/[id]/page.tsx written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/vibecode/workspace/src/app/dashboard/search/page.tsx.tmp.202.1760391351911
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 15278 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/workspace/src/app/dashboard/search/page.tsx.tmp.202.1760391351911 to /home/vibecode/workspace/src/app/dashboard/search/page.tsx
+[DEBUG] File /home/vibecode/workspace/src/app/dashboard/search/page.tsx written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/vibecode/workspace/src/app/dashboard/search/page.tsx.tmp.202.1760391352046
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 15286 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/workspace/src/app/dashboard/search/page.tsx.tmp.202.1760391352046 to /home/vibecode/workspace/src/app/dashboard/search/page.tsx
+[DEBUG] File /home/vibecode/workspace/src/app/dashboard/search/page.tsx written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/vibecode/workspace/src/app/dashboard/search/page.tsx.tmp.202.1760391352188
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 15296 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/workspace/src/app/dashboard/search/page.tsx.tmp.202.1760391352188 to /home/vibecode/workspace/src/app/dashboard/search/page.tsx
+[DEBUG] File /home/vibecode/workspace/src/app/dashboard/search/page.tsx written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Bash tool invoked with command: npx eslint src/app/dashboard/notifications/page.tsx src/app/dashboard/profile/\[id\]/page.tsx src/app/dashboard/search/page.tsx --format=compact
+[DEBUG] Bash tool description: Run ESLint on the three fixed files
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Bash tool invoked with command: npx eslint src/app/dashboard/notifications/page.tsx src/app/dashboard/profile/\[id\]/page.tsx src/app/dashboard/search/page.tsx
+[DEBUG] Bash tool description: Run ESLint on the three fixed files

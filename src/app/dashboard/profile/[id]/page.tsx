@@ -3,8 +3,9 @@
 import { useEffect, useState } from 'react';
 import { useRouter, useParams } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { auth } from '@/lib/firebase';
-import { onAuthStateChanged } from 'firebase/auth';
+import { onAuthStateChanged, User } from 'firebase/auth';
 
 // Extended dummy profiles with full information
 const DUMMY_PROFILES_FULL = {
@@ -174,8 +175,8 @@ export default function ProfileViewPage() {
   const router = useRouter();
   const params = useParams();
   const [loading, setLoading] = useState(true);
-  const [user, setUser] = useState<any>(null);
-  const [profile, setProfile] = useState<any>(null);
+  const [user, setUser] = useState<User | null>(null);
+  const [profile, setProfile] = useState<typeof DUMMY_PROFILES_FULL[keyof typeof DUMMY_PROFILES_FULL] | null>(null);
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -268,7 +269,7 @@ export default function ProfileViewPage() {
               <div className="flex-shrink-0">
                 <div className="w-48 h-48 rounded-full bg-white/10 flex items-center justify-center overflow-hidden">
                   {profile.photoURL ? (
-                    <img src={profile.photoURL} alt={profile.fullName} className="w-full h-full object-cover" />
+                    <Image src={profile.photoURL} alt={profile.fullName} width={192} height={192} className="w-full h-full object-cover" />
                   ) : (
                     <div className="text-8xl">👤</div>
                   )}
@@ -363,11 +364,11 @@ export default function ProfileViewPage() {
                 <div className="text-white text-lg">{profile.siblings}</div>
               </div>
               <div>
-                <div className="text-gray-400 text-sm mb-1">Father's Occupation</div>
+                <div className="text-gray-400 text-sm mb-1">Father&apos;s Occupation</div>
                 <div className="text-white text-lg">{profile.fatherOccupation}</div>
               </div>
               <div>
-                <div className="text-gray-400 text-sm mb-1">Mother's Occupation</div>
+                <div className="text-gray-400 text-sm mb-1">Mother&apos;s Occupation</div>
                 <div className="text-white text-lg">{profile.motherOccupation}</div>
               </div>
             </div>

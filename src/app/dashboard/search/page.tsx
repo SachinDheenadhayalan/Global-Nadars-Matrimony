@@ -4,12 +4,12 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { auth } from '@/lib/firebase';
-import { onAuthStateChanged } from 'firebase/auth';
+import { onAuthStateChanged, User } from 'firebase/auth';
 
 export default function SearchPage() {
   const router = useRouter();
   const [loading, setLoading] = useState(true);
-  const [user, setUser] = useState<any>(null);
+  const [user, setUser] = useState<User | null>(null);
   const [activeTab, setActiveTab] = useState<'regular' | 'keyword'>('regular');
 
   const [searchParams, setSearchParams] = useState({
@@ -243,8 +243,8 @@ export default function SearchPage() {
                   >
                     <option value="">Select Education</option>
                     <option value="High School">High School</option>
-                    <option value="Bachelor's Degree">Bachelor's Degree</option>
-                    <option value="Master's Degree">Master's Degree</option>
+                    <option value="Bachelor's Degree">Bachelor&apos;s Degree</option>
+                    <option value="Master's Degree">Master&apos;s Degree</option>
                     <option value="Doctorate/PhD">Doctorate/PhD</option>
                   </select>
                 </div>
