@@ -112,7 +112,7 @@ export default function NotificationsPage() {
               {/* Profile Details */}
               <div className="flex-1">
                 <div className="space-y-2 text-white">
-                  {activeTab === 'contact' && (
+                  {activeTab === 'contact' && 'religion' in notification && (
                     <>
                       <div>
                         <span className="text-gray-400">Age & Height:</span>
@@ -142,7 +142,7 @@ export default function NotificationsPage() {
                     </>
                   )}
 
-                  {activeTab === 'photo' && (
+                  {activeTab === 'photo' && 'religion' in notification && (
                     <>
                       <div>
                         <span className="text-gray-400">Age & Height:</span>
