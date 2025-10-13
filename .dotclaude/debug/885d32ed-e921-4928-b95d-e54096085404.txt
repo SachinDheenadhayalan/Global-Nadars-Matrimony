@@ -768,3 +768,80 @@
 [DEBUG] Hooks: checkForNewResponses returning 0 responses
 [DEBUG] Slash commands included in SlashCommand tool:
 [DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Executing hooks for PreToolUse:Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Tracked file modification for /home/vibecode/workspace/src/lib/firebase.ts
+[DEBUG] Writing to temp file: /home/vibecode/workspace/src/lib/firebase.ts.tmp.202.1760384119806
+[DEBUG] Temp file written successfully, size: 1140 bytes
+[DEBUG] Renaming /home/vibecode/workspace/src/lib/firebase.ts.tmp.202.1760384119806 to /home/vibecode/workspace/src/lib/firebase.ts
+[DEBUG] File /home/vibecode/workspace/src/lib/firebase.ts written atomically
+[DEBUG] Executing hooks for PostToolUse:Write
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Executing hooks for PreToolUse:Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Tracked file modification for /home/vibecode/workspace/src/types/index.ts
+[DEBUG] Writing to temp file: /home/vibecode/workspace/src/types/index.ts.tmp.202.1760384119952
+[DEBUG] Temp file written successfully, size: 2278 bytes
+[DEBUG] Renaming /home/vibecode/workspace/src/types/index.ts.tmp.202.1760384119952 to /home/vibecode/workspace/src/types/index.ts
+[DEBUG] File /home/vibecode/workspace/src/types/index.ts written atomically
+[DEBUG] Executing hooks for PostToolUse:Write
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Executing hooks for PreToolUse:Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Tracked file modification for /home/vibecode/workspace/FIREBASE_SETUP.md
+[DEBUG] Writing to temp file: /home/vibecode/workspace/FIREBASE_SETUP.md.tmp.202.1760384120119
+[DEBUG] Temp file written successfully, size: 4104 bytes
+[DEBUG] Renaming /home/vibecode/workspace/FIREBASE_SETUP.md.tmp.202.1760384120119 to /home/vibecode/workspace/FIREBASE_SETUP.md
+[DEBUG] File /home/vibecode/workspace/FIREBASE_SETUP.md written atomically
+[DEBUG] Executing hooks for PostToolUse:Write
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/vibecode/.claude/todos/885d32ed-e921-4928-b95d-e54096085404-agent-885d32ed-e921-4928-b95d-e54096085404.json.tmp.202.1760384127573
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude/todos/885d32ed-e921-4928-b95d-e54096085404-agent-885d32ed-e921-4928-b95d-e54096085404.json.tmp.202.1760384127573 to /home/vibecode/.claude/todos/885d32ed-e921-4928-b95d-e54096085404-agent-885d32ed-e921-4928-b95d-e54096085404.json
+[DEBUG] File /home/vibecode/.claude/todos/885d32ed-e921-4928-b95d-e54096085404-agent-885d32ed-e921-4928-b95d-e54096085404.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
