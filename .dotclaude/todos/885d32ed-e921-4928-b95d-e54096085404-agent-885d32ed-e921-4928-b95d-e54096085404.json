@@ -2,11 +2,11 @@
   {
     "content": "Fix ESLint errors in contact, matches, notifications, profile, and search pages",
     "status": "completed",
-    "activeForm": "Fixing remaining ESLint errors"
+    "activeForm": "Fixing ESLint errors"
   },
   {
     "content": "Test build and push fixes to GitHub",
     "status": "in_progress",
-    "activeForm": "Testing build and pushing fixes"
+    "activeForm": "Pushing fixes to GitHub"
   }
 ]
