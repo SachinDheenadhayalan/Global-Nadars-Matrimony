@@ -1,0 +1,103 @@
+[DEBUG] Watching for changes in setting files /home/vibecode/.claude/settings.json...
+[DEBUG] Writing to temp file: /home/vibecode/.claude/settings.json.tmp.184.1760382457254
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 209 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude/settings.json.tmp.184.1760382457254 to /home/vibecode/.claude/settings.json
+[DEBUG] File /home/vibecode/.claude/settings.json written atomically
+[DEBUG] Writing to temp file: /home/vibecode/.claude.json.tmp.184.1760382457264
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1214 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude.json.tmp.184.1760382457264 to /home/vibecode/.claude.json
+[DEBUG] File /home/vibecode/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/vibecode/.claude.json.tmp.184.1760382457274
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1251 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude.json.tmp.184.1760382457274 to /home/vibecode/.claude.json
+[DEBUG] File /home/vibecode/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/vibecode/.claude.json.tmp.184.1760382457288
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1251 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude.json.tmp.184.1760382457288 to /home/vibecode/.claude.json
+[DEBUG] File /home/vibecode/.claude.json written atomically
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] Creating shell snapshot for bash (/bin/bash)
+[DEBUG] Looking for shell config file: /home/vibecode/.bashrc
+[DEBUG] Snapshots directory: /home/vibecode/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /home/vibecode/.claude/shell-snapshots/snapshot-bash-1760382457495-x5e7yc.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /home/vibecode/.claude/todos/5f2f8540-7f4b-4826-9541-8762e4709758-agent-5f2f8540-7f4b-4826-9541-8762e4709758.json.tmp.184.1760382457510
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /home/vibecode/.claude/todos/5f2f8540-7f4b-4826-9541-8762e4709758-agent-5f2f8540-7f4b-4826-9541-8762e4709758.json.tmp.184.1760382457510 to /home/vibecode/.claude/todos/5f2f8540-7f4b-4826-9541-8762e4709758-agent-5f2f8540-7f4b-4826-9541-8762e4709758.json
+[DEBUG] File /home/vibecode/.claude/todos/5f2f8540-7f4b-4826-9541-8762e4709758-agent-5f2f8540-7f4b-4826-9541-8762e4709758.json written atomically
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/vibecode/.claude/skills, project=/home/vibecode/workspace/.claude/skills
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Writing to temp file: /home/vibecode/.claude.json.tmp.184.1760382457595
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1251 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude.json.tmp.184.1760382457595 to /home/vibecode/.claude.json
+[DEBUG] File /home/vibecode/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/vibecode/.claude.json.tmp.184.1760382457619
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1315 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude.json.tmp.184.1760382457619 to /home/vibecode/.claude.json
+[DEBUG] File /home/vibecode/.claude.json written atomically
+[DEBUG] Executing hooks for SessionStart:startup
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/vibecode/.claude.json.tmp.184.1760382457767
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1315 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude.json.tmp.184.1760382457767 to /home/vibecode/.claude.json
+[DEBUG] File /home/vibecode/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/vibecode/.claude.json.tmp.184.1760382457771
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1351 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude.json.tmp.184.1760382457771 to /home/vibecode/.claude.json
+[DEBUG] File /home/vibecode/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] performStartupChecks called, ENABLE_PLUGINS=true
+[DEBUG] Trust not accepted for current directory - skipping plugin installations
+[DEBUG] Writing to temp file: /home/vibecode/.claude.json.tmp.184.1760382457811
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1459 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude.json.tmp.184.1760382457811 to /home/vibecode/.claude.json
+[DEBUG] File /home/vibecode/.claude.json written atomically
+[DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+[DEBUG] Ripgrep first use test: PASSED (mode=system, path=rg)
+[DEBUG] Shell snapshot created successfully (1655 bytes)
+[DEBUG] Writing to temp file: /home/vibecode/.claude.json.tmp.184.1760382458011
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1489 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude.json.tmp.184.1760382458011 to /home/vibecode/.claude.json
+[DEBUG] File /home/vibecode/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/vibecode/.claude.json.tmp.184.1760382458036
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 31157 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude.json.tmp.184.1760382458036 to /home/vibecode/.claude.json
+[DEBUG] File /home/vibecode/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/vibecode/.claude.json.tmp.184.1760382458041
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 31157 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude.json.tmp.184.1760382458041 to /home/vibecode/.claude.json
+[DEBUG] File /home/vibecode/.claude.json written atomically
+[DEBUG] Failed to check metrics opt-out status: Request failed with status code 401
+[DEBUG] Metrics export disabled by organization setting
