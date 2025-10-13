@@ -5739,3 +5739,9 @@ EOF
 [DEBUG] Bash tool invoked with command: git push https://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@github.com/SachinDheenadhayalan/Global-Nadars-Matrimony.git main
 [DEBUG] Bash tool description: Push to GitHub with token
 [DEBUG] Bash tool timeout: 60000ms
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
