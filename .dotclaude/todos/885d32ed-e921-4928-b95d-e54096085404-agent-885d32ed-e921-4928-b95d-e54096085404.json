@@ -31,12 +31,12 @@
   },
   {
     "content": "Create all other pages (About, Gallery, Members, Contact, Login, Register)",
-    "status": "in_progress",
+    "status": "completed",
     "activeForm": "Creating all other pages"
   },
   {
     "content": "Prepare Firebase integration structure",
-    "status": "pending",
+    "status": "in_progress",
     "activeForm": "Preparing Firebase integration structure"
   }
 ]
