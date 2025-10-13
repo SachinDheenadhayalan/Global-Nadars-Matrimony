@@ -26,38 +26,13 @@
   },
   {
     "content": "Create Home page",
-    "status": "in_progress",
+    "status": "completed",
     "activeForm": "Creating Home page"
   },
   {
-    "content": "Create About Us page",
-    "status": "pending",
-    "activeForm": "Creating About Us page"
-  },
-  {
-    "content": "Create Gallery page",
-    "status": "pending",
-    "activeForm": "Creating Gallery page"
-  },
-  {
-    "content": "Create Members page",
-    "status": "pending",
-    "activeForm": "Creating Members page"
-  },
-  {
-    "content": "Create Contact Us page",
-    "status": "pending",
-    "activeForm": "Creating Contact Us page"
-  },
-  {
-    "content": "Create Login page",
-    "status": "pending",
-    "activeForm": "Creating Login page"
-  },
-  {
-    "content": "Create Registration page",
-    "status": "pending",
-    "activeForm": "Creating Registration page"
+    "content": "Create all other pages (About, Gallery, Members, Contact, Login, Register)",
+    "status": "in_progress",
+    "activeForm": "Creating all other pages"
   },
   {
     "content": "Prepare Firebase integration structure",
