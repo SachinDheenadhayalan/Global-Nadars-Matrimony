@@ -489,7 +489,633 @@ export default function RegisterPage() {
           </div>
         );
 
-      // I'll continue with the other steps in the next part...
+      case 2: // Location
+        return (
+          <div className="space-y-6">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold text-white mb-2">Where are you from?</h2>
+              <p className="text-gray-300">Tell us about your location</p>
+            </div>
+
+            <div>
+              <label className="block text-white mb-2 font-medium">Country *</label>
+              <select
+                name="country"
+                value={formData.country}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-blue-400"
+              >
+                <option value="India" className="bg-gray-800">India</option>
+                <option value="USA" className="bg-gray-800">USA</option>
+                <option value="UK" className="bg-gray-800">UK</option>
+                <option value="Canada" className="bg-gray-800">Canada</option>
+                <option value="Australia" className="bg-gray-800">Australia</option>
+                <option value="Other" className="bg-gray-800">Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label className="block text-white mb-2 font-medium">State *</label>
+              <select
+                name="state"
+                value={formData.state}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-blue-400"
+              >
+                <option value="" className="bg-gray-800">Select State</option>
+                <option value="Tamil Nadu" className="bg-gray-800">Tamil Nadu</option>
+                <option value="Kerala" className="bg-gray-800">Kerala</option>
+                <option value="Karnataka" className="bg-gray-800">Karnataka</option>
+                <option value="Andhra Pradesh" className="bg-gray-800">Andhra Pradesh</option>
+                <option value="Telangana" className="bg-gray-800">Telangana</option>
+                <option value="Maharashtra" className="bg-gray-800">Maharashtra</option>
+                <option value="Gujarat" className="bg-gray-800">Gujarat</option>
+                <option value="Delhi" className="bg-gray-800">Delhi</option>
+                <option value="West Bengal" className="bg-gray-800">West Bengal</option>
+                <option value="Rajasthan" className="bg-gray-800">Rajasthan</option>
+                <option value="Uttar Pradesh" className="bg-gray-800">Uttar Pradesh</option>
+                <option value="Madhya Pradesh" className="bg-gray-800">Madhya Pradesh</option>
+                <option value="Other" className="bg-gray-800">Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label className="block text-white mb-2 font-medium">City *</label>
+              <select
+                name="city"
+                value={formData.city}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-blue-400"
+              >
+                <option value="" className="bg-gray-800">Select City</option>
+                <option value="Chennai" className="bg-gray-800">Chennai</option>
+                <option value="Bangalore" className="bg-gray-800">Bangalore</option>
+                <option value="Mumbai" className="bg-gray-800">Mumbai</option>
+                <option value="Delhi" className="bg-gray-800">Delhi</option>
+                <option value="Hyderabad" className="bg-gray-800">Hyderabad</option>
+                <option value="Pune" className="bg-gray-800">Pune</option>
+                <option value="Kolkata" className="bg-gray-800">Kolkata</option>
+                <option value="Ahmedabad" className="bg-gray-800">Ahmedabad</option>
+                <option value="Surat" className="bg-gray-800">Surat</option>
+                <option value="Coimbatore" className="bg-gray-800">Coimbatore</option>
+                <option value="Madurai" className="bg-gray-800">Madurai</option>
+                <option value="Trichy" className="bg-gray-800">Trichy</option>
+                <option value="Salem" className="bg-gray-800">Salem</option>
+                <option value="Other" className="bg-gray-800">Other</option>
+              </select>
+            </div>
+
+            {formData.city === 'Other' && (
+              <div>
+                <label className="block text-white mb-2 font-medium">Enter City Name *</label>
+                <input
+                  type="text"
+                  name="customCity"
+                  value={formData.customCity}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400"
+                  placeholder="Enter your city"
+                />
+              </div>
+            )}
+          </div>
+        );
+
+      case 3: // Education & Career
+        return (
+          <div className="space-y-6">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold text-white mb-2">Education & Career</h2>
+              <p className="text-gray-300">Tell us about your professional background</p>
+            </div>
+
+            <div>
+              <label className="block text-white mb-2 font-medium">Education Level *</label>
+              <select
+                name="educationLevel"
+                value={formData.educationLevel}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-blue-400"
+              >
+                <option value="" className="bg-gray-800">Select Education Level</option>
+                <option value="High School" className="bg-gray-800">High School</option>
+                <option value="Diploma" className="bg-gray-800">Diploma</option>
+                <option value="Bachelor's Degree" className="bg-gray-800">Bachelor's Degree</option>
+                <option value="Master's Degree" className="bg-gray-800">Master's Degree</option>
+                <option value="Doctorate/PhD" className="bg-gray-800">Doctorate/PhD</option>
+                <option value="Professional Degree" className="bg-gray-800">Professional Degree</option>
+              </select>
+            </div>
+
+            <div>
+              <label className="block text-white mb-2 font-medium">Education Details</label>
+              <input
+                type="text"
+                name="educationDetails"
+                value={formData.educationDetails}
+                onChange={handleChange}
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400"
+                placeholder="e.g., B.Tech Computer Science, MBA Finance"
+              />
+            </div>
+
+            <div>
+              <label className="block text-white mb-2 font-medium">Occupation *</label>
+              <select
+                name="occupation"
+                value={formData.occupation}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-blue-400"
+              >
+                <option value="" className="bg-gray-800">Select Occupation</option>
+                <option value="Software Engineer" className="bg-gray-800">Software Engineer</option>
+                <option value="Doctor" className="bg-gray-800">Doctor</option>
+                <option value="Teacher" className="bg-gray-800">Teacher</option>
+                <option value="Business Owner" className="bg-gray-800">Business Owner</option>
+                <option value="Government Employee" className="bg-gray-800">Government Employee</option>
+                <option value="Lawyer" className="bg-gray-800">Lawyer</option>
+                <option value="Engineer" className="bg-gray-800">Engineer</option>
+                <option value="Accountant" className="bg-gray-800">Accountant</option>
+                <option value="Consultant" className="bg-gray-800">Consultant</option>
+                <option value="Student" className="bg-gray-800">Student</option>
+                <option value="Homemaker" className="bg-gray-800">Homemaker</option>
+                <option value="Other" className="bg-gray-800">Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label className="block text-white mb-2 font-medium">Occupation Details</label>
+              <input
+                type="text"
+                name="occupationDetails"
+                value={formData.occupationDetails}
+                onChange={handleChange}
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400"
+                placeholder="e.g., Company name, Specialization"
+              />
+            </div>
+
+            <div>
+              <label className="block text-white mb-2 font-medium">Annual Income *</label>
+              <select
+                name="annualIncome"
+                value={formData.annualIncome}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-blue-400"
+              >
+                <option value="" className="bg-gray-800">Select Income Range</option>
+                <option value="Below ₹2 Lakhs" className="bg-gray-800">Below ₹2 Lakhs</option>
+                <option value="₹2-5 Lakhs" className="bg-gray-800">₹2-5 Lakhs</option>
+                <option value="₹5-10 Lakhs" className="bg-gray-800">₹5-10 Lakhs</option>
+                <option value="₹10-20 Lakhs" className="bg-gray-800">₹10-20 Lakhs</option>
+                <option value="₹20-50 Lakhs" className="bg-gray-800">₹20-50 Lakhs</option>
+                <option value="Above ₹50 Lakhs" className="bg-gray-800">Above ₹50 Lakhs</option>
+                <option value="Prefer not to say" className="bg-gray-800">Prefer not to say</option>
+              </select>
+            </div>
+          </div>
+        );
+
+      case 4: // Family Details
+        return (
+          <div className="space-y-6">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold text-white mb-2">Family Details</h2>
+              <p className="text-gray-300">Tell us about your family background</p>
+            </div>
+
+            <div>
+              <label className="block text-white mb-2 font-medium">Family Type *</label>
+              <div className="flex gap-4">
+                {['Nuclear Family', 'Joint Family'].map(type => (
+                  <button
+                    key={type}
+                    type="button"
+                    onClick={() => setFormData({ ...formData, familyType: type })}
+                    className={`flex-1 px-6 py-3 rounded-full font-semibold transition-all ${
+                      formData.familyType === type
+                        ? 'bg-gradient-to-br from-pink-500 to-pink-600 text-white'
+                        : 'bg-white/10 text-gray-300 hover:bg-white/20'
+                    }`}
+                  >
+                    {type}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-white mb-2 font-medium">Father's Occupation</label>
+              <input
+                type="text"
+                name="fatherOccupation"
+                value={formData.fatherOccupation}
+                onChange={handleChange}
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400"
+                placeholder="Enter father's occupation"
+              />
+            </div>
+
+            <div>
+              <label className="block text-white mb-2 font-medium">Mother's Occupation</label>
+              <input
+                type="text"
+                name="motherOccupation"
+                value={formData.motherOccupation}
+                onChange={handleChange}
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400"
+                placeholder="Enter mother's occupation"
+              />
+            </div>
+
+            <div>
+              <label className="block text-white mb-2 font-medium">Number of Siblings</label>
+              <div className="flex items-center gap-4">
+                <button
+                  type="button"
+                  onClick={() => handleNumberChange('siblings', false)}
+                  className="px-4 py-2 text-pink-400 text-2xl"
+                >−</button>
+                <div className="flex-1 text-center text-2xl font-bold text-white">
+                  {formData.siblings}
+                </div>
+                <button
+                  type="button"
+                  onClick={() => handleNumberChange('siblings', true)}
+                  className="px-4 py-2 text-pink-400 text-2xl"
+                >+</button>
+              </div>
+            </div>
+          </div>
+        );
+
+      case 5: // Cultural Information
+        return (
+          <div className="space-y-6">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold text-white mb-2">Cultural Information</h2>
+              <p className="text-gray-300">Share your cultural background</p>
+            </div>
+
+            <div>
+              <label className="block text-white mb-2 font-medium">Religion *</label>
+              <div className="flex gap-4 flex-wrap">
+                {['Hindu', 'Christian', 'Muslim', 'Other'].map(religion => (
+                  <button
+                    key={religion}
+                    type="button"
+                    onClick={() => setFormData({ ...formData, religion })}
+                    className={`px-6 py-3 rounded-full font-semibold transition-all ${
+                      formData.religion === religion
+                        ? 'bg-gradient-to-br from-pink-500 to-pink-600 text-white'
+                        : 'bg-white/10 text-gray-300 hover:bg-white/20'
+                    }`}
+                  >
+                    {religion}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-white mb-2 font-medium">Caste/Community</label>
+              <input
+                type="text"
+                name="caste"
+                value={formData.caste}
+                onChange={handleChange}
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400"
+                placeholder="Nadar"
+              />
+            </div>
+
+            <div>
+              <label className="block text-white mb-2 font-medium">Sub-Caste</label>
+              <select
+                name="subCaste"
+                value={formData.subCaste}
+                onChange={handleChange}
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-blue-400"
+              >
+                <option value="" className="bg-gray-800">Select Sub-Caste</option>
+                <option value="Nadar" className="bg-gray-800">Nadar</option>
+                <option value="Shanar" className="bg-gray-800">Shanar</option>
+                <option value="Nelamaikkarars" className="bg-gray-800">Nelamaikkarars</option>
+                <option value="Gramathu Nadar" className="bg-gray-800">Gramathu Nadar</option>
+                <option value="Mara Nadar" className="bg-gray-800">Mara Nadar</option>
+                <option value="Other" className="bg-gray-800">Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label className="block text-white mb-2 font-medium">Mother Tongue *</label>
+              <select
+                name="motherTongue"
+                value={formData.motherTongue}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-blue-400"
+              >
+                <option value="" className="bg-gray-800">Select Mother Tongue</option>
+                <option value="Tamil" className="bg-gray-800">Tamil</option>
+                <option value="Telugu" className="bg-gray-800">Telugu</option>
+                <option value="Kannada" className="bg-gray-800">Kannada</option>
+                <option value="Malayalam" className="bg-gray-800">Malayalam</option>
+                <option value="Hindi" className="bg-gray-800">Hindi</option>
+                <option value="English" className="bg-gray-800">English</option>
+                <option value="Marathi" className="bg-gray-800">Marathi</option>
+                <option value="Gujarati" className="bg-gray-800">Gujarati</option>
+                <option value="Bengali" className="bg-gray-800">Bengali</option>
+                <option value="Punjabi" className="bg-gray-800">Punjabi</option>
+                <option value="Other" className="bg-gray-800">Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label className="block text-white mb-2 font-medium">Dietary Preference (Optional)</label>
+              <div className="flex gap-4 flex-wrap">
+                {['Vegetarian', 'Non-Vegetarian', 'Eggetarian'].map(diet => (
+                  <button
+                    key={diet}
+                    type="button"
+                    onClick={() => setFormData({ ...formData, dietaryPreference: diet })}
+                    className={`px-6 py-3 rounded-full font-semibold transition-all ${
+                      formData.dietaryPreference === diet
+                        ? 'bg-gradient-to-br from-pink-500 to-pink-600 text-white'
+                        : 'bg-white/10 text-gray-300 hover:bg-white/20'
+                    }`}
+                  >
+                    {diet}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+        );
+
+      case 6: // Lifestyle
+        return (
+          <div className="space-y-6">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold text-white mb-2">Lifestyle & Interests</h2>
+              <p className="text-gray-300">Tell us about your lifestyle and hobbies</p>
+            </div>
+
+            <div>
+              <label className="block text-white mb-2 font-medium">Drinking</label>
+              <div className="flex gap-4 flex-wrap">
+                {['Never', 'Occasionally', 'Regularly'].map(drink => (
+                  <button
+                    key={drink}
+                    type="button"
+                    onClick={() => setFormData({ ...formData, drinking: drink })}
+                    className={`px-6 py-3 rounded-full font-semibold transition-all ${
+                      formData.drinking === drink
+                        ? 'bg-gradient-to-br from-pink-500 to-pink-600 text-white'
+                        : 'bg-white/10 text-gray-300 hover:bg-white/20'
+                    }`}
+                  >
+                    {drink}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-white mb-2 font-medium">Smoking (Optional)</label>
+              <div className="flex gap-4 flex-wrap">
+                {['Never', 'Occasionally', 'Regularly'].map(smoke => (
+                  <button
+                    key={smoke}
+                    type="button"
+                    onClick={() => setFormData({ ...formData, smoking: smoke })}
+                    className={`px-6 py-3 rounded-full font-semibold transition-all ${
+                      formData.smoking === smoke
+                        ? 'bg-gradient-to-br from-pink-500 to-pink-600 text-white'
+                        : 'bg-white/10 text-gray-300 hover:bg-white/20'
+                    }`}
+                  >
+                    {smoke}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-white mb-2 font-medium">Hobbies & Interests (Select multiple)</label>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+                {['Reading', 'Music', 'Cooking', 'Traveling', 'Sports', 'Dancing', 'Gardening', 'Photography', 'Painting', 'Writing', 'Yoga', 'Fitness', 'Movies', 'Gaming'].map(hobby => (
+                  <button
+                    key={hobby}
+                    type="button"
+                    onClick={() => handleMultiSelect('hobbies', hobby)}
+                    className={`px-4 py-2 rounded-full font-semibold transition-all text-sm ${
+                      formData.hobbies.includes(hobby)
+                        ? 'bg-gradient-to-br from-pink-500 to-pink-600 text-white'
+                        : 'bg-white/10 text-gray-300 hover:bg-white/20'
+                    }`}
+                  >
+                    {hobby}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-white mb-2 font-medium">About Me (Optional)</label>
+              <textarea
+                name="aboutMe"
+                value={formData.aboutMe}
+                onChange={handleChange}
+                rows={4}
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400"
+                placeholder="Tell us something about yourself..."
+              />
+            </div>
+          </div>
+        );
+
+      case 7: // Partner Preferences
+        return (
+          <div className="space-y-6">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold text-white mb-2">Partner Preferences</h2>
+              <p className="text-gray-300">Help us find your perfect match</p>
+            </div>
+
+            <div>
+              <label className="block text-white mb-2 font-medium">Age Range (years)</label>
+              <div className="grid grid-cols-2 gap-6">
+                <div>
+                  <p className="text-gray-400 text-sm mb-2">From</p>
+                  <div className="flex items-center gap-2">
+                    <button
+                      type="button"
+                      onClick={() => handleNumberChange('preferredAgeMin', false)}
+                      className="px-4 py-2 text-pink-400 text-2xl"
+                    >−</button>
+                    <div className="flex-1 text-center text-2xl font-bold text-white">
+                      {formData.preferredAgeMin}
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => handleNumberChange('preferredAgeMin', true)}
+                      className="px-4 py-2 text-pink-400 text-2xl"
+                    >+</button>
+                  </div>
+                </div>
+                <div>
+                  <p className="text-gray-400 text-sm mb-2">To</p>
+                  <div className="flex items-center gap-2">
+                    <button
+                      type="button"
+                      onClick={() => handleNumberChange('preferredAgeMax', false)}
+                      className="px-4 py-2 text-pink-400 text-2xl"
+                    >−</button>
+                    <div className="flex-1 text-center text-2xl font-bold text-white">
+                      {formData.preferredAgeMax}
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => handleNumberChange('preferredAgeMax', true)}
+                      className="px-4 py-2 text-pink-400 text-2xl"
+                    >+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-white mb-2 font-medium">Height Range (cm)</label>
+              <div className="grid grid-cols-2 gap-6">
+                <div>
+                  <p className="text-gray-400 text-sm mb-2">From</p>
+                  <div className="flex items-center gap-2">
+                    <button
+                      type="button"
+                      onClick={() => handleNumberChange('preferredHeightMin', false)}
+                      className="px-4 py-2 text-pink-400 text-2xl"
+                    >−</button>
+                    <div className="flex-1 text-center text-xl font-bold text-white">
+                      {formData.preferredHeightMin} cm
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => handleNumberChange('preferredHeightMin', true)}
+                      className="px-4 py-2 text-pink-400 text-2xl"
+                    >+</button>
+                  </div>
+                </div>
+                <div>
+                  <p className="text-gray-400 text-sm mb-2">To</p>
+                  <div className="flex items-center gap-2">
+                    <button
+                      type="button"
+                      onClick={() => handleNumberChange('preferredHeightMax', false)}
+                      className="px-4 py-2 text-pink-400 text-2xl"
+                    >−</button>
+                    <div className="flex-1 text-center text-xl font-bold text-white">
+                      {formData.preferredHeightMax} cm
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => handleNumberChange('preferredHeightMax', true)}
+                      className="px-4 py-2 text-pink-400 text-2xl"
+                    >+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-white mb-2 font-medium">Marital Status</label>
+              <div className="flex gap-4 flex-wrap">
+                {['Never Married', 'Divorced', 'Widowed'].map(status => (
+                  <button
+                    key={status}
+                    type="button"
+                    onClick={() => handleMultiSelect('preferredMaritalStatus', status)}
+                    className={`px-6 py-3 rounded-full font-semibold transition-all ${
+                      formData.preferredMaritalStatus.includes(status)
+                        ? 'bg-gradient-to-br from-pink-500 to-pink-600 text-white'
+                        : 'bg-white/10 text-gray-300 hover:bg-white/20'
+                    }`}
+                  >
+                    {status}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-white mb-2 font-medium">Dietary Preference (Optional)</label>
+              <div className="flex gap-4 flex-wrap">
+                {['Vegetarian', 'Non-Vegetarian', 'Eggetarian'].map(diet => (
+                  <button
+                    key={diet}
+                    type="button"
+                    onClick={() => setFormData({ ...formData, preferredDiet: diet })}
+                    className={`px-6 py-3 rounded-full font-semibold transition-all ${
+                      formData.preferredDiet === diet
+                        ? 'bg-gradient-to-br from-pink-500 to-pink-600 text-white'
+                        : 'bg-white/10 text-gray-300 hover:bg-white/20'
+                    }`}
+                  >
+                    {diet}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-white mb-2 font-medium">Smoking (Optional)</label>
+              <div className="flex gap-4 flex-wrap">
+                {['Never', 'Occasionally', 'Regularly'].map(smoke => (
+                  <button
+                    key={smoke}
+                    type="button"
+                    onClick={() => setFormData({ ...formData, preferredSmoking: smoke })}
+                    className={`px-6 py-3 rounded-full font-semibold transition-all ${
+                      formData.preferredSmoking === smoke
+                        ? 'bg-gradient-to-br from-pink-500 to-pink-600 text-white'
+                        : 'bg-white/10 text-gray-300 hover:bg-white/20'
+                    }`}
+                  >
+                    {smoke}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-white mb-2 font-medium">Drinking (Optional)</label>
+              <div className="flex gap-4 flex-wrap">
+                {['Never', 'Occasionally', 'Regularly'].map(drink => (
+                  <button
+                    key={drink}
+                    type="button"
+                    onClick={() => setFormData({ ...formData, preferredDrinking: drink })}
+                    className={`px-6 py-3 rounded-full font-semibold transition-all ${
+                      formData.preferredDrinking === drink
+                        ? 'bg-gradient-to-br from-pink-500 to-pink-600 text-white'
+                        : 'bg-white/10 text-gray-300 hover:bg-white/20'
+                    }`}
+                  >
+                    {drink}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+        );
+
       default:
         return <div>Step {currentStep + 1}</div>;
     }
