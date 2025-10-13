@@ -1,12 +1,1 @@
-[
-  {
-    "content": "Change Complete Profile button to gradient color",
-    "status": "in_progress",
-    "activeForm": "Changing button gradient"
-  },
-  {
-    "content": "Add email/password step before registration",
-    "status": "pending",
-    "activeForm": "Adding authentication step"
-  }
-]
+[]

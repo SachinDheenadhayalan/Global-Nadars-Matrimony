@@ -1173,7 +1173,7 @@ export default function RegisterPage() {
               <button
                 onClick={handleSubmit}
                 disabled={loading}
-                className="flex-1 px-8 py-4 bg-gradient-to-br from-green-500 to-green-600 text-white rounded-full font-semibold hover:opacity-90 transition-all enhanced-button disabled:opacity-50"
+                className="flex-1 px-8 py-4 bg-gradient-to-br from-pink-500 to-pink-600 text-white rounded-full font-semibold hover:opacity-90 transition-all enhanced-button disabled:opacity-50"
               >
                 {loading ? 'Creating Profile...' : 'Complete Profile'}
               </button>
