@@ -121,9 +121,126 @@ export default function RegisterPage() {
   };
 
   const nextStep = () => {
+    // Validate current step before proceeding
+    if (!validateCurrentStep()) {
+      return;
+    }
+
     if (currentStep < STEPS.length - 1) {
       setCurrentStep(currentStep + 1);
       setError('');
+    }
+  };
+
+  const validateCurrentStep = () => {
+    setError('');
+
+    switch (currentStep) {
+      case 0: // Account Setup
+        if (!formData.email) {
+          setError('Please enter your email');
+          return false;
+        }
+        if (!formData.password) {
+          setError('Please enter a password');
+          return false;
+        }
+        if (formData.password.length < 6) {
+          setError('Password must be at least 6 characters');
+          return false;
+        }
+        if (!formData.confirmPassword) {
+          setError('Please confirm your password');
+          return false;
+        }
+        if (formData.password !== formData.confirmPassword) {
+          setError('Passwords do not match');
+          return false;
+        }
+        return true;
+
+      case 1: // Profile Photo (optional, always valid)
+        return true;
+
+      case 2: // Basic Information
+        if (!formData.firstName) {
+          setError('Please enter your first name');
+          return false;
+        }
+        if (!formData.lastName) {
+          setError('Please enter your last name');
+          return false;
+        }
+        if (!formData.gender) {
+          setError('Please select your gender');
+          return false;
+        }
+        if (!formData.dateOfBirth) {
+          setError('Please enter your date of birth');
+          return false;
+        }
+        if (!formData.maritalStatus) {
+          setError('Please select your marital status');
+          return false;
+        }
+        return true;
+
+      case 3: // Location
+        if (!formData.state) {
+          setError('Please select your state');
+          return false;
+        }
+        if (!formData.city) {
+          setError('Please select your city');
+          return false;
+        }
+        if (formData.city === 'Other' && !formData.customCity) {
+          setError('Please enter your city name');
+          return false;
+        }
+        return true;
+
+      case 4: // Education & Career
+        if (!formData.educationLevel) {
+          setError('Please select your education level');
+          return false;
+        }
+        if (!formData.occupation) {
+          setError('Please select your occupation');
+          return false;
+        }
+        if (!formData.annualIncome) {
+          setError('Please select your annual income');
+          return false;
+        }
+        return true;
+
+      case 5: // Family Details
+        if (!formData.familyType) {
+          setError('Please select your family type');
+          return false;
+        }
+        return true;
+
+      case 6: // Cultural Information
+        if (!formData.religion) {
+          setError('Please select your religion');
+          return false;
+        }
+        if (!formData.motherTongue) {
+          setError('Please select your mother tongue');
+          return false;
+        }
+        return true;
+
+      case 7: // Lifestyle (all optional)
+        return true;
+
+      case 8: // Partner Preferences (all optional)
+        return true;
+
+      default:
+        return true;
     }
   };
 
