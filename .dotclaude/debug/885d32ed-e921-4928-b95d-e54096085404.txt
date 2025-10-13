@@ -2014,3 +2014,27 @@
 [DEBUG] Hooks: Found 0 total hooks in registry
 [DEBUG] Hooks: checkForNewResponses returning 0 responses
 [DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /home/vibecode/.claude.json.tmp.202.1760385726828
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 34958 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude.json.tmp.202.1760385726828 to /home/vibecode/.claude.json
+[DEBUG] File /home/vibecode/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/vibecode/.claude.json.tmp.202.1760385726860
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 34992 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude.json.tmp.202.1760385726860 to /home/vibecode/.claude.json
+[DEBUG] File /home/vibecode/.claude.json written atomically
+[DEBUG] Writing to temp file: /home/vibecode/.claude.json.tmp.202.1760385726867
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 36317 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude.json.tmp.202.1760385726867 to /home/vibecode/.claude.json
+[DEBUG] File /home/vibecode/.claude.json written atomically
