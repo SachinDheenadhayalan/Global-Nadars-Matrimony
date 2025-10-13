@@ -3192,3 +3192,4 @@
 [DEBUG] Hooks: checkForNewResponses called
 [DEBUG] Hooks: Found 0 total hooks in registry
 [DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:
