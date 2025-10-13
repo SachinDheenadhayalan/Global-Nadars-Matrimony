@@ -272,7 +272,58 @@ export default function RegisterPage() {
 
   const renderStep = () => {
     switch (currentStep) {
-      case 0: // Profile Photo
+      case 0: // Account Setup
+        return (
+          <div className="space-y-6">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold text-white mb-2">Create Your Account</h2>
+              <p className="text-gray-300">Let's get started with your email and password</p>
+            </div>
+
+            <div>
+              <label className="block text-white mb-2 font-medium">Email *</label>
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400"
+                placeholder="Enter your email"
+              />
+            </div>
+
+            <div>
+              <label className="block text-white mb-2 font-medium">Password *</label>
+              <input
+                type="password"
+                name="password"
+                value={formData.password}
+                onChange={handleChange}
+                required
+                minLength={6}
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400"
+                placeholder="Create password (minimum 6 characters)"
+              />
+            </div>
+
+            <div>
+              <label className="block text-white mb-2 font-medium">Confirm Password *</label>
+              <input
+                type="password"
+                name="confirmPassword"
+                value={formData.confirmPassword}
+                onChange={handleChange}
+                required
+                minLength={6}
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400"
+                placeholder="Confirm your password"
+              />
+            </div>
+          </div>
+        );
+
+      case 1: // Profile Photo
         return (
           <div className="space-y-6">
             <div className="text-center mb-8">
