@@ -6,12 +6,12 @@
   },
   {
     "content": "Update Firebase configuration with credentials",
-    "status": "in_progress",
+    "status": "completed",
     "activeForm": "Updating Firebase config"
   },
   {
     "content": "Set up Firebase Authentication in login page",
-    "status": "pending",
+    "status": "in_progress",
     "activeForm": "Setting up authentication"
   },
   {
