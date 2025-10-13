@@ -3,15 +3,73 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { auth, db } from '@/lib/firebase';
+import { auth } from '@/lib/firebase';
 import { onAuthStateChanged } from 'firebase/auth';
-import { collection, query, getDocs, where, limit } from 'firebase/firestore';
+
+// Dummy profile data
+const DUMMY_PROFILES = [
+  {
+    id: 'dummy1',
+    fullName: 'Priya Sharma',
+    age: 28,
+    height: 165,
+    city: 'Chennai',
+    state: 'Tamil Nadu',
+    occupation: 'Software Engineer',
+    occupationDetails: 'TCS',
+    photoURL: null
+  },
+  {
+    id: 'dummy2',
+    fullName: 'Rajesh Kumar',
+    age: 30,
+    height: 175,
+    city: 'Bangalore',
+    state: 'Karnataka',
+    occupation: 'Doctor',
+    occupationDetails: 'Apollo Hospitals',
+    photoURL: null
+  },
+  {
+    id: 'dummy3',
+    fullName: 'Anjali Patel',
+    age: 26,
+    height: 160,
+    city: 'Mumbai',
+    state: 'Maharashtra',
+    occupation: 'Teacher',
+    occupationDetails: 'St. Mary's School',
+    photoURL: null
+  },
+  {
+    id: 'dummy4',
+    fullName: 'Vikram Reddy',
+    age: 32,
+    height: 180,
+    city: 'Hyderabad',
+    state: 'Telangana',
+    occupation: 'Business Owner',
+    occupationDetails: 'Reddy Enterprises',
+    photoURL: null
+  },
+  {
+    id: 'dummy5',
+    fullName: 'Deepika Nair',
+    age: 27,
+    height: 162,
+    city: 'Kochi',
+    state: 'Kerala',
+    occupation: 'Architect',
+    occupationDetails: 'Design Studios',
+    photoURL: null
+  },
+];
 
 export default function MatchesPage() {
   const router = useRouter();
   const [loading, setLoading] = useState(true);
   const [user, setUser] = useState<any>(null);
-  const [matches, setMatches] = useState<any[]>([]);
+  const [matches] = useState(DUMMY_PROFILES);
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
@@ -21,29 +79,11 @@ export default function MatchesPage() {
       }
 
       setUser(currentUser);
-      await fetchMatches();
       setLoading(false);
     });
 
     return () => unsubscribe();
   }, [router]);
-
-  const fetchMatches = async () => {
-    try {
-      const profilesRef = collection(db, 'profiles');
-      const q = query(profilesRef, limit(10));
-      const querySnapshot = await getDocs(q);
-
-      const profilesData = querySnapshot.docs.map(doc => ({
-        id: doc.id,
-        ...doc.data()
-      }));
-
-      setMatches(profilesData);
-    } catch (error) {
-      console.error('Error fetching matches:', error);
-    }
-  };
 
   const handleLogout = async () => {
     await auth.signOut();
@@ -153,7 +193,7 @@ export default function MatchesPage() {
                     {/* Interest Buttons */}
                     <div className="mt-6 flex items-center gap-4">
                       <span className="text-white font-semibold">Interest</span>
-                      <button className="px-8 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg font-semibold transition-all">
+                      <button className="px-8 py-2 bg-gradient-to-br from-blue-400 to-purple-500 hover:opacity-90 text-white rounded-lg font-semibold transition-all">
                         Yes
                       </button>
                       <button className="px-8 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg font-semibold transition-all">
