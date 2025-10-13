@@ -85,7 +85,7 @@ const DUMMY_PROFILES_FULL = {
     state: 'Maharashtra',
     country: 'India',
     occupation: 'Teacher',
-    occupationDetails: "St. Mary's School",
+    occupationDetails: 'St. Mary School',
     educationLevel: "Bachelor's Degree",
     educationDetails: 'B.Ed in English',
     annualIncome: '₹5-10 Lakhs',
