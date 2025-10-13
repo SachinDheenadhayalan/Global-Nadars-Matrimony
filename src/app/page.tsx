@@ -88,19 +88,19 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-5xl font-bold text-blue-400 mb-2">10,000+</div>
+              <div className="text-5xl font-bold bg-gradient-to-br from-blue-400 to-purple-500 bg-clip-text text-transparent mb-2">#</div>
               <div className="text-gray-300">Registered Members</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-purple-400 mb-2">5,000+</div>
+              <div className="text-5xl font-bold bg-gradient-to-br from-blue-400 to-purple-500 bg-clip-text text-transparent mb-2">#</div>
               <div className="text-gray-300">Success Stories</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-green-400 mb-2">500+</div>
+              <div className="text-5xl font-bold bg-gradient-to-br from-blue-400 to-purple-500 bg-clip-text text-transparent mb-2">#</div>
               <div className="text-gray-300">Weddings This Year</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-orange-400 mb-2">98%</div>
+              <div className="text-5xl font-bold bg-gradient-to-br from-blue-400 to-purple-500 bg-clip-text text-transparent mb-2">#</div>
               <div className="text-gray-300">Satisfaction Rate</div>
             </div>
           </div>
