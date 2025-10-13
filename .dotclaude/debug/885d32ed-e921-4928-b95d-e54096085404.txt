@@ -1695,3 +1695,34 @@
 [DEBUG] Renaming /home/vibecode/.claude.json.tmp.202.1760384990190 to /home/vibecode/.claude.json
 [DEBUG] File /home/vibecode/.claude.json written atomically
 [DEBUG] Metrics export disabled by organization setting
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 159e7f85-103f-4821-8a00-6bdccb21aef8
+[DEBUG] FileHistory: Added snapshot for 159e7f85-103f-4821-8a00-6bdccb21aef8, tracking 16 files
+[DEBUG] Slash commands included in SlashCommand tool:
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /home/vibecode/.claude/todos/885d32ed-e921-4928-b95d-e54096085404-agent-885d32ed-e921-4928-b95d-e54096085404.json.tmp.202.1760385395255
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 697 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /home/vibecode/.claude/todos/885d32ed-e921-4928-b95d-e54096085404-agent-885d32ed-e921-4928-b95d-e54096085404.json.tmp.202.1760385395255 to /home/vibecode/.claude/todos/885d32ed-e921-4928-b95d-e54096085404-agent-885d32ed-e921-4928-b95d-e54096085404.json
+[DEBUG] File /home/vibecode/.claude/todos/885d32ed-e921-4928-b95d-e54096085404-agent-885d32ed-e921-4928-b95d-e54096085404.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool:

@@ -1,1 +1,27 @@
-[]
+[
+  {
+    "content": "Install Firebase SDK package",
+    "status": "in_progress",
+    "activeForm": "Installing Firebase SDK"
+  },
+  {
+    "content": "Update Firebase configuration with credentials",
+    "status": "pending",
+    "activeForm": "Updating Firebase config"
+  },
+  {
+    "content": "Set up Firebase Authentication in login page",
+    "status": "pending",
+    "activeForm": "Setting up authentication"
+  },
+  {
+    "content": "Set up Firebase Authentication in register page",
+    "status": "pending",
+    "activeForm": "Setting up registration"
+  },
+  {
+    "content": "Test Firebase authentication flow",
+    "status": "pending",
+    "activeForm": "Testing Firebase integration"
+  }
+]
