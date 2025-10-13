@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "content": "Create multi-step registration form with 8 steps",
+    "status": "in_progress",
+    "activeForm": "Creating multi-step registration component"
+  },
+  {
+    "content": "Update Firestore to match profiles collection structure",
+    "status": "pending",
+    "activeForm": "Updating Firebase data structure"
+  },
+  {
+    "content": "Test complete registration flow",
+    "status": "pending",
+    "activeForm": "Testing registration flow"
+  }
+]
