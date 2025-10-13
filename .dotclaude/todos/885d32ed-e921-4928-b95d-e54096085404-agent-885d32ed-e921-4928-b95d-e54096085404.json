@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "content": "Replace success story numbers with # and add gradient color",
+    "status": "in_progress",
+    "activeForm": "Replacing success story numbers"
+  },
+  {
+    "content": "Add gradient to CTA buttons (Login, Register, Get Started)",
+    "status": "pending",
+    "activeForm": "Adding gradient to buttons"
+  },
+  {
+    "content": "Add background to header on scroll",
+    "status": "pending",
+    "activeForm": "Adding scroll background to header"
+  },
+  {
+    "content": "Fix mobile menu alignment and animation",
+    "status": "pending",
+    "activeForm": "Fixing mobile menu"
+  }
+]
