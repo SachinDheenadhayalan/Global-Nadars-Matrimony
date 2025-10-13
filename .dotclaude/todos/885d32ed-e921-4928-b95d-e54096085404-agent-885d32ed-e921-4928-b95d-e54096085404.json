@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "content": "Add left-to-right ripple effect to CTA buttons",
+    "status": "completed",
+    "activeForm": "Adding ripple effect to buttons"
+  },
+  {
+    "content": "Make header fully opaque",
+    "status": "in_progress",
+    "activeForm": "Making header fully opaque"
+  },
+  {
+    "content": "Add gradient to login page submit button",
+    "status": "pending",
+    "activeForm": "Updating login page button"
+  }
+]

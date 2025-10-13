@@ -110,7 +110,7 @@ body::before {
   color: rgb(255 255 255);
 }
 
-/* Enhanced button with shine effect */
+/* Enhanced button with ripple effect */
 .enhanced-button {
   position: relative;
   overflow: hidden;
@@ -124,12 +124,18 @@ body::before {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  transition: left 0.5s;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transition: left 0.6s ease-out;
+  z-index: 1;
 }
 
 .enhanced-button:hover::before {
   left: 100%;
+}
+
+.enhanced-button > * {
+  position: relative;
+  z-index: 2;
 }
 
 /* Floating animation */
