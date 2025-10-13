@@ -6,12 +6,12 @@
   },
   {
     "content": "Make header fully opaque",
-    "status": "in_progress",
+    "status": "completed",
     "activeForm": "Making header fully opaque"
   },
   {
     "content": "Add gradient to login page submit button",
-    "status": "pending",
+    "status": "in_progress",
     "activeForm": "Updating login page button"
   }
 ]
