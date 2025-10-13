@@ -16,12 +16,17 @@
   },
   {
     "content": "Create Footer component",
-    "status": "in_progress",
+    "status": "completed",
     "activeForm": "Creating Footer component"
   },
   {
+    "content": "Update layout with Header and Footer",
+    "status": "completed",
+    "activeForm": "Updating layout with Header and Footer"
+  },
+  {
     "content": "Create Home page",
-    "status": "pending",
+    "status": "in_progress",
     "activeForm": "Creating Home page"
   },
   {
