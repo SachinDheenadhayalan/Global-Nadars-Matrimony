@@ -3,8 +3,9 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { auth } from '@/lib/firebase';
-import { onAuthStateChanged } from 'firebase/auth';
+import { onAuthStateChanged, User } from 'firebase/auth';
 
 // Dummy profile data
 const DUMMY_PROFILES = [
@@ -71,7 +72,7 @@ type NotificationTabType = 'contact' | 'photo' | 'liked';
 export default function MatchesPage() {
   const router = useRouter();
   const [loading, setLoading] = useState(true);
-  const [user, setUser] = useState<any>(null);
+  const [user, setUser] = useState<User | null>(null);
   const [activeTab, setActiveTab] = useState<TabType>('matches');
   const [notificationTab, setNotificationTab] = useState<NotificationTabType>('contact');
   const [searchQuery, setSearchQuery] = useState('');
@@ -284,9 +285,9 @@ export default function MatchesPage() {
                       <div className="flex flex-col md:flex-row gap-6">
                         {/* Profile Image */}
                         <div className="flex-shrink-0">
-                          <div className="w-32 h-32 rounded-full bg-white/10 flex items-center justify-center overflow-hidden">
+                          <div className="w-32 h-32 rounded-full bg-white/10 flex items-center justify-center overflow-hidden relative">
                             {profile.photoURL ? (
-                              <img src={profile.photoURL} alt={profile.fullName} className="w-full h-full object-cover" />
+                              <Image src={profile.photoURL} alt={profile.fullName} fill className="object-cover" />
                             ) : (
                               <div className="text-6xl">👤</div>
                             )}
@@ -377,9 +378,9 @@ export default function MatchesPage() {
                     <div className="flex flex-col md:flex-row gap-6">
                       {/* Profile Image */}
                       <div className="flex-shrink-0">
-                        <div className="w-32 h-32 rounded-full bg-white/10 flex items-center justify-center overflow-hidden">
+                        <div className="w-32 h-32 rounded-full bg-white/10 flex items-center justify-center overflow-hidden relative">
                           {profile.photoURL ? (
-                            <img src={profile.photoURL} alt={profile.fullName} className="w-full h-full object-cover" />
+                            <Image src={profile.photoURL} alt={profile.fullName} fill className="object-cover" />
                           ) : (
                             <div className="text-6xl">👤</div>
                           )}
@@ -429,7 +430,7 @@ export default function MatchesPage() {
 
               {matches.length === 0 && searchQuery && (
                 <div className="text-center text-gray-400 py-12">
-                  No profiles found matching "{searchQuery}".
+                  No profiles found matching &quot;{searchQuery}&quot;.
                 </div>
               )}
             </div>
