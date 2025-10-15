@@ -1288,7 +1288,7 @@ export default function RegisterPage() {
               <button
                 onClick={nextStep}
                 disabled={loading}
-                className="flex-1 px-8 py-4 bg-gradient-to-br from-pink-500 to-pink-600 text-white rounded-full font-semibold hover:opacity-90 transition-all enhanced-button disabled:opacity-50"
+                className="flex-1 px-8 py-4 bg-gradient-to-br from-blue-400 to-purple-500 text-white rounded-full font-semibold hover:opacity-90 transition-all enhanced-button disabled:opacity-50"
               >
                 Continue
               </button>
