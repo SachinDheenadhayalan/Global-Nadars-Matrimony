@@ -62,7 +62,7 @@ export default function SearchPage() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
             <Link href="/dashboard/matches" className="flex items-center space-x-3">
-              <div className="text-2xl font-bold bg-gradient-to-br from-blue-400 to-purple-500 bg-clip-text text-transparent">
+              <div className="text-2xl font-bold brand-gradient-text">
                 Vibecode
               </div>
             </Link>
@@ -81,7 +81,7 @@ export default function SearchPage() {
                 </span>
               </Link>
               <div className="flex items-center space-x-2">
-                <span className="text-blue-400">👤</span>
+                <span className="text-[#c6c2ff]">👤</span>
                 <span className="text-white font-semibold">{user?.displayName || user?.email}</span>
               </div>
               <button onClick={handleLogout} className="text-gray-300 hover:text-white transition-colors">
@@ -133,7 +133,7 @@ export default function SearchPage() {
                   <select
                     value={searchParams.age}
                     onChange={(e) => setSearchParams({...searchParams, age: e.target.value})}
-                    className="col-span-2 px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-blue-400"
+                    className="col-span-2 px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#c6c2ff]"
                   >
                     <option value="">Select</option>
                     <option value="18-25">18-25</option>
@@ -150,7 +150,7 @@ export default function SearchPage() {
                   <select
                     value={searchParams.height}
                     onChange={(e) => setSearchParams({...searchParams, height: e.target.value})}
-                    className="col-span-2 px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-blue-400"
+                    className="col-span-2 px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#c6c2ff]"
                   >
                     <option value="">Select</option>
                     <option value="150-160">150-160 cm</option>
@@ -207,7 +207,7 @@ export default function SearchPage() {
                   <select
                     value={searchParams.subcaste}
                     onChange={(e) => setSearchParams({...searchParams, subcaste: e.target.value})}
-                    className="col-span-2 px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-blue-400"
+                    className="col-span-2 px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#c6c2ff]"
                   >
                     <option value="">Select</option>
                     <option value="Nadar">Nadar</option>
@@ -224,7 +224,7 @@ export default function SearchPage() {
                   <select
                     value={searchParams.star}
                     onChange={(e) => setSearchParams({...searchParams, star: e.target.value})}
-                    className="col-span-2 px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-blue-400"
+                    className="col-span-2 px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#c6c2ff]"
                   >
                     <option value="">Select Star</option>
                     <option value="Ashwini">Ashwini</option>
@@ -239,7 +239,7 @@ export default function SearchPage() {
                   <select
                     value={searchParams.education}
                     onChange={(e) => setSearchParams({...searchParams, education: e.target.value})}
-                    className="col-span-2 px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-blue-400"
+                    className="col-span-2 px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#c6c2ff]"
                   >
                     <option value="">Select Education</option>
                     <option value="High School">High School</option>
@@ -255,7 +255,7 @@ export default function SearchPage() {
                   <select
                     value={searchParams.income}
                     onChange={(e) => setSearchParams({...searchParams, income: e.target.value})}
-                    className="col-span-2 px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-blue-400"
+                    className="col-span-2 px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#c6c2ff]"
                   >
                     <option value="">Select</option>
                     <option value="Below ₹2 Lakhs">Below ₹2 Lakhs</option>
@@ -274,7 +274,7 @@ export default function SearchPage() {
                   <select
                     value={searchParams.age}
                     onChange={(e) => setSearchParams({...searchParams, age: e.target.value})}
-                    className="col-span-2 px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-blue-400"
+                    className="col-span-2 px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#c6c2ff]"
                   >
                     <option value="">Select</option>
                     <option value="18-25">18-25</option>
@@ -289,7 +289,7 @@ export default function SearchPage() {
                   <select
                     value={searchParams.height}
                     onChange={(e) => setSearchParams({...searchParams, height: e.target.value})}
-                    className="col-span-2 px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-blue-400"
+                    className="col-span-2 px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#c6c2ff]"
                   >
                     <option value="">Select</option>
                     <option value="150-160">150-160 cm</option>
@@ -307,7 +307,7 @@ export default function SearchPage() {
                       value={searchParams.keyword}
                       onChange={(e) => setSearchParams({...searchParams, keyword: e.target.value})}
                       placeholder="Eg: TamilNadu, Chennai, Egmore, Sumathi, Developer."
-                      className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400"
+                      className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-[#c6c2ff]"
                     />
                     <p className="text-gray-400 text-sm mt-2">
                       Eg: TamilNadu, Chennai, Egmore, Sumathi, Developer.

@@ -16,13 +16,13 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/register"
-              className="enhanced-button px-8 py-4 bg-gradient-to-br from-blue-400 to-purple-500 text-white rounded-full text-lg font-semibold hover:opacity-90 transition-all"
+              className="enhanced-button px-8 py-4 brand-gradient text-white rounded-full text-lg font-semibold hover:opacity-90 transition-all shadow-lg shadow-pink-500/20"
             >
               Register Now
             </Link>
             <Link
               href="/login"
-              className="enhanced-button px-8 py-4 bg-gradient-to-br from-blue-400 to-purple-500 text-white rounded-full text-lg font-semibold hover:opacity-90 transition-all"
+              className="enhanced-button px-8 py-4 brand-gradient text-white rounded-full text-lg font-semibold hover:opacity-90 transition-all shadow-lg shadow-pink-500/20"
             >
               Login
             </Link>
@@ -37,7 +37,7 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="glass-card p-8">
-            <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+            <div className="w-16 h-16 brand-gradient rounded-full flex items-center justify-center mb-6 mx-auto shadow-lg shadow-pink-500/20">
               <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
@@ -51,7 +51,7 @@ export default function Home() {
           </div>
 
           <div className="glass-card p-8">
-            <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+            <div className="w-16 h-16 brand-gradient rounded-full flex items-center justify-center mb-6 mx-auto">
               <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
@@ -88,19 +88,19 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-5xl font-bold bg-gradient-to-br from-blue-400 to-purple-500 bg-clip-text text-transparent mb-2">#</div>
+              <div className="text-5xl font-bold brand-gradient-text mb-2">#</div>
               <div className="text-gray-300">Registered Members</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold bg-gradient-to-br from-blue-400 to-purple-500 bg-clip-text text-transparent mb-2">#</div>
+              <div className="text-5xl font-bold brand-gradient-text mb-2">#</div>
               <div className="text-gray-300">Success Stories</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold bg-gradient-to-br from-blue-400 to-purple-500 bg-clip-text text-transparent mb-2">#</div>
+              <div className="text-5xl font-bold brand-gradient-text mb-2">#</div>
               <div className="text-gray-300">Weddings This Year</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold bg-gradient-to-br from-blue-400 to-purple-500 bg-clip-text text-transparent mb-2">#</div>
+              <div className="text-5xl font-bold brand-gradient-text mb-2">#</div>
               <div className="text-gray-300">Satisfaction Rate</div>
             </div>
           </div>
@@ -118,7 +118,7 @@ export default function Home() {
           </p>
           <Link
             href="/register"
-            className="enhanced-button inline-block px-10 py-5 bg-gradient-to-br from-blue-400 to-purple-500 text-white rounded-full text-lg font-bold hover:opacity-90 transition-all"
+            className="enhanced-button inline-block px-10 py-5 brand-gradient text-white rounded-full text-lg font-bold hover:opacity-90 transition-all shadow-lg shadow-pink-500/20"
           >
             Get Started Now
           </Link>

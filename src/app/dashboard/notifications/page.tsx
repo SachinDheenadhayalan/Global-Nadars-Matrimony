@@ -210,7 +210,7 @@ export default function NotificationsPage() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
             <Link href="/dashboard/matches" className="flex items-center space-x-3">
-              <div className="text-2xl font-bold bg-gradient-to-br from-blue-400 to-purple-500 bg-clip-text text-transparent">
+              <div className="text-2xl font-bold brand-gradient-text">
                 Vibecode
               </div>
             </Link>
@@ -229,7 +229,7 @@ export default function NotificationsPage() {
                 </span>
               </Link>
               <div className="flex items-center space-x-2">
-                <span className="text-blue-400">👤</span>
+                <span className="text-[#c6c2ff]">👤</span>
                 <span className="text-white font-semibold">{user?.displayName || user?.email}</span>
               </div>
               <button onClick={handleLogout} className="text-gray-300 hover:text-white transition-colors">

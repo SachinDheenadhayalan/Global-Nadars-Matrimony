@@ -21,23 +21,23 @@ export default function AboutPage() {
           <h2 className="text-3xl font-semibold text-white mt-8 mb-4">Why Choose Us?</h2>
           <ul className="space-y-4 text-lg">
             <li className="flex items-start">
-              <span className="text-blue-400 mr-3">✓</span>
+              <span className="text-[#c6c2ff] mr-3">✓</span>
               <span><strong className="text-white">Verified Profiles:</strong> Every profile is thoroughly verified to ensure authenticity and safety.</span>
             </li>
             <li className="flex items-start">
-              <span className="text-blue-400 mr-3">✓</span>
+              <span className="text-[#c6c2ff] mr-3">✓</span>
               <span><strong className="text-white">Privacy Protection:</strong> Your personal information is secure and shared only with your consent.</span>
             </li>
             <li className="flex items-start">
-              <span className="text-blue-400 mr-3">✓</span>
+              <span className="text-[#c6c2ff] mr-3">✓</span>
               <span><strong className="text-white">Community Focus:</strong> Exclusively for the Nadar community, preserving traditions and values.</span>
             </li>
             <li className="flex items-start">
-              <span className="text-blue-400 mr-3">✓</span>
+              <span className="text-[#c6c2ff] mr-3">✓</span>
               <span><strong className="text-white">Success Stories:</strong> Thousands of happy couples have found their match through our platform.</span>
             </li>
             <li className="flex items-start">
-              <span className="text-blue-400 mr-3">✓</span>
+              <span className="text-[#c6c2ff] mr-3">✓</span>
               <span><strong className="text-white">24/7 Support:</strong> Our dedicated team is always available to help you.</span>
             </li>
           </ul>
@@ -49,7 +49,7 @@ export default function AboutPage() {
             and family traditions.
           </p>
 
-          <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl p-8 mt-8 border border-white/10">
+          <div className="brand-gradient-soft rounded-xl p-8 mt-8 border border-white/10">
             <p className="text-xl text-center text-white font-semibold">
               Join us today and take the first step towards finding your perfect life partner!
             </p>

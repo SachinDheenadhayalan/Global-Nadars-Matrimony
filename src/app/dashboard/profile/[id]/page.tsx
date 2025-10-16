@@ -224,7 +224,7 @@ export default function ProfileViewPage() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
             <Link href="/dashboard/matches" className="flex items-center space-x-3">
-              <div className="text-2xl font-bold bg-gradient-to-br from-blue-400 to-purple-500 bg-clip-text text-transparent">
+              <div className="text-2xl font-bold brand-gradient-text">
                 Vibecode
               </div>
             </Link>
@@ -243,7 +243,7 @@ export default function ProfileViewPage() {
                 </span>
               </Link>
               <div className="flex items-center space-x-2">
-                <span className="text-blue-400">👤</span>
+                <span className="text-[#c6c2ff]">👤</span>
                 <span className="text-white font-semibold">{user?.displayName || user?.email}</span>
               </div>
               <button onClick={handleLogout} className="text-gray-300 hover:text-white transition-colors">
@@ -257,7 +257,7 @@ export default function ProfileViewPage() {
       {/* Main Content */}
       <div className="container mx-auto px-4 pt-32 pb-12">
         <div className="mb-8">
-          <Link href="/dashboard/matches" className="text-blue-400 hover:text-blue-300">
+          <Link href="/dashboard/matches" className="text-[#c6c2ff] hover:text-[#f7a8d9]">
             ← Back to Matches
           </Link>
         </div>
@@ -282,7 +282,7 @@ export default function ProfileViewPage() {
                   {profile.age} years • {profile.gender} • {profile.city}, {profile.state}
                 </div>
                 <div className="flex flex-wrap gap-3 justify-center md:justify-start">
-                  <button className="px-6 py-3 bg-gradient-to-br from-blue-400 to-purple-500 hover:opacity-90 text-white rounded-lg font-semibold transition-all">
+                  <button className="px-6 py-3 brand-gradient hover:opacity-90 text-white rounded-lg font-semibold transition-all">
                     Express Interest
                   </button>
                   <button className="px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-lg font-semibold transition-all">

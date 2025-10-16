@@ -1,25 +1,27 @@
 @import "tailwindcss";
 
 :root {
-  --background: 222.2 84% 4.9%;
-  --foreground: 210 40% 98%;
-  --card: 222.2 84% 4.9%;
-  --card-foreground: 210 40% 98%;
-  --popover: 222.2 84% 4.9%;
-  --popover-foreground: 210 40% 98%;
-  --primary: 210 40% 98%;
-  --primary-foreground: 222.2 47.4% 11.2%;
-  --secondary: 217.2 32.6% 17.5%;
-  --secondary-foreground: 210 40% 98%;
-  --muted: 217.2 32.6% 17.5%;
-  --muted-foreground: 215 20.2% 65.1%;
-  --accent: 217.2 32.6% 17.5%;
-  --accent-foreground: 210 40% 98%;
-  --destructive: 0 62.8% 30.6%;
+  --background: 258 86% 8%;
+  --foreground: 215 31% 95%;
+  --card: 258 60% 12%;
+  --card-foreground: 215 31% 96%;
+  --popover: 258 60% 12%;
+  --popover-foreground: 215 31% 96%;
+  --primary: 250 90% 88%;
+  --primary-foreground: 274 35% 12%;
+  --secondary: 285 45% 20%;
+  --secondary-foreground: 215 31% 96%;
+  --muted: 280 40% 22%;
+  --muted-foreground: 270 20% 75%;
+  --accent: 320 55% 68%;
+  --accent-foreground: 274 35% 12%;
+  --destructive: 0 70% 40%;
   --destructive-foreground: 210 40% 98%;
-  --border: 217.2 32.6% 17.5%;
-  --input: 217.2 32.6% 17.5%;
-  --ring: 212.7 26.8% 83.9%;
+  --border: 280 38% 28%;
+  --input: 280 38% 28%;
+  --ring: 280 78% 72%;
+  --brand-gradient-start: #c6c2ff;
+  --brand-gradient-end: #f7a8d9;
 }
 
 @theme inline {
@@ -32,12 +34,15 @@
 }
 
 body {
-  background-color: rgb(3 7 18);
+  background-color: #140c25;
   font-family: 'Inter', 'Poppins', sans-serif;
   color: hsl(var(--foreground));
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 30%, #16213e 70%, #0f3460 100%);
+  background:
+    radial-gradient(circle at 15% 85%, rgba(198, 194, 255, 0.18) 0%, transparent 55%),
+    radial-gradient(circle at 85% 25%, rgba(247, 168, 217, 0.22) 0%, transparent 55%),
+    linear-gradient(135deg, #1a102f 0%, #24103a 40%, #341543 70%, #441a4a 100%);
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
@@ -51,9 +56,9 @@ body::before {
   width: 100%;
   height: 100%;
   background:
-    radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.1) 0%, transparent 50%);
+    radial-gradient(circle at 20% 80%, rgba(198, 194, 255, 0.25) 0%, transparent 55%),
+    radial-gradient(circle at 80% 20%, rgba(247, 168, 217, 0.25) 0%, transparent 55%),
+    radial-gradient(circle at 45% 45%, rgba(223, 170, 240, 0.16) 0%, transparent 55%);
   pointer-events: none;
   z-index: 0;
 }
@@ -95,9 +100,9 @@ body::before {
 }
 
 .pill-active {
-  background-color: rgba(59, 130, 246, 0.9);
+  background-image: linear-gradient(135deg, rgba(198, 194, 255, 0.95), rgba(247, 168, 217, 0.95));
   color: rgb(255 255 255);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px -5px rgba(198, 194, 255, 0.45), 0 6px 20px -8px rgba(247, 168, 217, 0.4);
 }
 
 .pill-inactive {
@@ -106,7 +111,7 @@ body::before {
 }
 
 .pill-inactive:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.12);
   color: rgb(255 255 255);
 }
 
@@ -154,13 +159,28 @@ body::before {
 
 /* Gradient backgrounds */
 .gradient-bg-primary {
-  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 30%, #16213e 70%, #0f3460 100%);
+  background: linear-gradient(135deg, rgba(198, 194, 255, 0.25), rgba(247, 168, 217, 0.25));
 }
 
 .gradient-bg-blue {
-  background: linear-gradient(to right, rgba(96, 165, 250, 0.1), rgba(59, 130, 246, 0.1));
+  background: linear-gradient(135deg, rgba(198, 194, 255, 0.18), rgba(247, 168, 217, 0.18));
 }
 
 .gradient-bg-purple {
-  background: linear-gradient(to bottom right, rgba(168, 85, 247, 0.1), rgba(59, 130, 246, 0.1));
+  background: linear-gradient(135deg, rgba(198, 194, 255, 0.22), rgba(247, 168, 217, 0.22));
+}
+
+.brand-gradient {
+  background-image: linear-gradient(135deg, var(--brand-gradient-start), var(--brand-gradient-end));
+}
+
+.brand-gradient-soft {
+  background-image: linear-gradient(135deg, rgba(198, 194, 255, 0.12), rgba(247, 168, 217, 0.12));
+}
+
+.brand-gradient-text {
+  background-image: linear-gradient(135deg, var(--brand-gradient-start), var(--brand-gradient-end));
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }

@@ -22,7 +22,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex flex-col items-center hover:opacity-80 transition-opacity">
             <div className="flex items-center gap-2">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center">
+              <div className="w-12 h-12 brand-gradient rounded-full flex items-center justify-center shadow-lg shadow-pink-500/20">
                 <span className="text-2xl font-bold text-white">GN</span>
               </div>
               <div className="flex flex-col">

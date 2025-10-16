@@ -139,14 +139,14 @@ export default function MatchesPage() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
             <Link href="/dashboard/matches" className="flex items-center space-x-3">
-              <div className="text-2xl font-bold bg-gradient-to-br from-blue-400 to-purple-500 bg-clip-text text-transparent">
+              <div className="text-2xl font-bold brand-gradient-text">
                 Vibecode
               </div>
             </Link>
 
             <nav className="hidden md:flex items-center space-x-8">
               <div className="flex items-center space-x-2">
-                <span className="text-blue-400">👤</span>
+                <span className="text-[#c6c2ff]">👤</span>
                 <span className="text-white font-semibold">{user?.displayName || user?.email}</span>
               </div>
               <button onClick={handleLogout} className="text-gray-300 hover:text-white transition-colors">
@@ -322,7 +322,7 @@ export default function MatchesPage() {
                           {/* Interest Buttons */}
                           <div className="mt-6 flex items-center gap-4">
                             <span className="text-white font-semibold">Interest</span>
-                            <button className="px-8 py-2 bg-gradient-to-br from-blue-400 to-purple-500 hover:opacity-90 text-white rounded-lg font-semibold transition-all">
+                            <button className="px-8 py-2 brand-gradient hover:opacity-90 text-white rounded-lg font-semibold transition-all">
                               Yes
                             </button>
                             <button className="px-8 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg font-semibold transition-all">
@@ -360,7 +360,7 @@ export default function MatchesPage() {
                     onChange={(e) => setSearchQuery(e.target.value)}
                     onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
                     placeholder="Search by name..."
-                    className="flex-1 px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400"
+                    className="flex-1 px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-[#c6c2ff]"
                   />
                   <button
                     onClick={handleSearch}
@@ -415,7 +415,7 @@ export default function MatchesPage() {
                         {/* Interest Buttons */}
                         <div className="mt-6 flex items-center gap-4">
                           <span className="text-white font-semibold">Interest</span>
-                          <button className="px-8 py-2 bg-gradient-to-br from-blue-400 to-purple-500 hover:opacity-90 text-white rounded-lg font-semibold transition-all">
+                          <button className="px-8 py-2 brand-gradient hover:opacity-90 text-white rounded-lg font-semibold transition-all">
                             Yes
                           </button>
                           <button className="px-8 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg font-semibold transition-all">

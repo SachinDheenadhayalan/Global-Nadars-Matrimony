@@ -411,7 +411,7 @@ export default function RegisterPage() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400"
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-[#c6c2ff]"
                 placeholder="Enter your email"
               />
             </div>
@@ -425,7 +425,7 @@ export default function RegisterPage() {
                 onChange={handleChange}
                 required
                 minLength={6}
-                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400"
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-[#c6c2ff]"
                 placeholder="Create password (minimum 6 characters)"
               />
             </div>
@@ -439,7 +439,7 @@ export default function RegisterPage() {
                 onChange={handleChange}
                 required
                 minLength={6}
-                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400"
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-[#c6c2ff]"
                 placeholder="Confirm your password"
               />
             </div>
@@ -501,7 +501,7 @@ export default function RegisterPage() {
                   value={formData.firstName}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400"
+                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-[#c6c2ff]"
                   placeholder="Enter your first name"
                 />
               </div>
@@ -514,7 +514,7 @@ export default function RegisterPage() {
                   value={formData.lastName}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400"
+                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-[#c6c2ff]"
                   placeholder="Enter your last name"
                 />
               </div>
@@ -530,7 +530,7 @@ export default function RegisterPage() {
                     onClick={() => setFormData({ ...formData, gender: g })}
                     className={`px-6 py-3 rounded-full font-semibold transition-all ${
                       formData.gender === g
-                        ? 'bg-gradient-to-br from-pink-500 to-pink-600 text-white'
+                        ? 'brand-gradient text-white'
                         : 'bg-white/10 text-gray-300 hover:bg-white/20'
                     }`}
                   >
@@ -548,7 +548,7 @@ export default function RegisterPage() {
                 value={formData.dateOfBirth}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-blue-400"
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#c6c2ff]"
               />
             </div>
 
@@ -602,7 +602,7 @@ export default function RegisterPage() {
                     onClick={() => setFormData({ ...formData, maritalStatus: status })}
                     className={`px-6 py-3 rounded-full font-semibold transition-all ${
                       formData.maritalStatus === status
-                        ? 'bg-gradient-to-br from-pink-500 to-pink-600 text-white'
+                        ? 'brand-gradient text-white'
                         : 'bg-white/10 text-gray-300 hover:bg-white/20'
                     }`}
                   >
@@ -629,7 +629,7 @@ export default function RegisterPage() {
                 value={formData.country}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-blue-400"
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#c6c2ff]"
               >
                 <option value="India" className="bg-gray-800">India</option>
                 <option value="USA" className="bg-gray-800">USA</option>
@@ -647,7 +647,7 @@ export default function RegisterPage() {
                 value={formData.state}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-blue-400"
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#c6c2ff]"
               >
                 <option value="" className="bg-gray-800">Select State</option>
                 <option value="Tamil Nadu" className="bg-gray-800">Tamil Nadu</option>
@@ -673,7 +673,7 @@ export default function RegisterPage() {
                 value={formData.city}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-blue-400"
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#c6c2ff]"
               >
                 <option value="" className="bg-gray-800">Select City</option>
                 <option value="Chennai" className="bg-gray-800">Chennai</option>
@@ -702,7 +702,7 @@ export default function RegisterPage() {
                   value={formData.customCity}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400"
+                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-[#c6c2ff]"
                   placeholder="Enter your city"
                 />
               </div>
@@ -725,7 +725,7 @@ export default function RegisterPage() {
                 value={formData.educationLevel}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-blue-400"
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#c6c2ff]"
               >
                 <option value="" className="bg-gray-800">Select Education Level</option>
                 <option value="High School" className="bg-gray-800">High School</option>
@@ -744,7 +744,7 @@ export default function RegisterPage() {
                 name="educationDetails"
                 value={formData.educationDetails}
                 onChange={handleChange}
-                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400"
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-[#c6c2ff]"
                 placeholder="e.g., B.Tech Computer Science, MBA Finance"
               />
             </div>
@@ -756,7 +756,7 @@ export default function RegisterPage() {
                 value={formData.occupation}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-blue-400"
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#c6c2ff]"
               >
                 <option value="" className="bg-gray-800">Select Occupation</option>
                 <option value="Software Engineer" className="bg-gray-800">Software Engineer</option>
@@ -781,7 +781,7 @@ export default function RegisterPage() {
                 name="occupationDetails"
                 value={formData.occupationDetails}
                 onChange={handleChange}
-                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400"
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-[#c6c2ff]"
                 placeholder="e.g., Company name, Specialization"
               />
             </div>
@@ -793,7 +793,7 @@ export default function RegisterPage() {
                 value={formData.annualIncome}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-blue-400"
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#c6c2ff]"
               >
                 <option value="" className="bg-gray-800">Select Income Range</option>
                 <option value="Below ₹2 Lakhs" className="bg-gray-800">Below ₹2 Lakhs</option>
@@ -826,7 +826,7 @@ export default function RegisterPage() {
                     onClick={() => setFormData({ ...formData, familyType: type })}
                     className={`flex-1 px-6 py-3 rounded-full font-semibold transition-all ${
                       formData.familyType === type
-                        ? 'bg-gradient-to-br from-pink-500 to-pink-600 text-white'
+                        ? 'brand-gradient text-white'
                         : 'bg-white/10 text-gray-300 hover:bg-white/20'
                     }`}
                   >
@@ -843,7 +843,7 @@ export default function RegisterPage() {
                 name="fatherOccupation"
                 value={formData.fatherOccupation}
                 onChange={handleChange}
-                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400"
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-[#c6c2ff]"
                 placeholder="Enter father&apos;s occupation"
               />
             </div>
@@ -855,7 +855,7 @@ export default function RegisterPage() {
                 name="motherOccupation"
                 value={formData.motherOccupation}
                 onChange={handleChange}
-                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400"
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-[#c6c2ff]"
                 placeholder="Enter mother&apos;s occupation"
               />
             </div>
@@ -899,7 +899,7 @@ export default function RegisterPage() {
                     onClick={() => setFormData({ ...formData, religion })}
                     className={`px-6 py-3 rounded-full font-semibold transition-all ${
                       formData.religion === religion
-                        ? 'bg-gradient-to-br from-pink-500 to-pink-600 text-white'
+                        ? 'brand-gradient text-white'
                         : 'bg-white/10 text-gray-300 hover:bg-white/20'
                     }`}
                   >
@@ -916,7 +916,7 @@ export default function RegisterPage() {
                 name="caste"
                 value={formData.caste}
                 onChange={handleChange}
-                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400"
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-[#c6c2ff]"
                 placeholder="Nadar"
               />
             </div>
@@ -927,7 +927,7 @@ export default function RegisterPage() {
                 name="subCaste"
                 value={formData.subCaste}
                 onChange={handleChange}
-                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-blue-400"
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#c6c2ff]"
               >
                 <option value="" className="bg-gray-800">Select Sub-Caste</option>
                 <option value="Nadar" className="bg-gray-800">Nadar</option>
@@ -946,7 +946,7 @@ export default function RegisterPage() {
                 value={formData.motherTongue}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-blue-400"
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#c6c2ff]"
               >
                 <option value="" className="bg-gray-800">Select Mother Tongue</option>
                 <option value="Tamil" className="bg-gray-800">Tamil</option>
@@ -973,7 +973,7 @@ export default function RegisterPage() {
                     onClick={() => setFormData({ ...formData, dietaryPreference: diet })}
                     className={`px-6 py-3 rounded-full font-semibold transition-all ${
                       formData.dietaryPreference === diet
-                        ? 'bg-gradient-to-br from-pink-500 to-pink-600 text-white'
+                        ? 'brand-gradient text-white'
                         : 'bg-white/10 text-gray-300 hover:bg-white/20'
                     }`}
                   >
@@ -1003,7 +1003,7 @@ export default function RegisterPage() {
                     onClick={() => setFormData({ ...formData, drinking: drink })}
                     className={`px-6 py-3 rounded-full font-semibold transition-all ${
                       formData.drinking === drink
-                        ? 'bg-gradient-to-br from-pink-500 to-pink-600 text-white'
+                        ? 'brand-gradient text-white'
                         : 'bg-white/10 text-gray-300 hover:bg-white/20'
                     }`}
                   >
@@ -1023,7 +1023,7 @@ export default function RegisterPage() {
                     onClick={() => setFormData({ ...formData, smoking: smoke })}
                     className={`px-6 py-3 rounded-full font-semibold transition-all ${
                       formData.smoking === smoke
-                        ? 'bg-gradient-to-br from-pink-500 to-pink-600 text-white'
+                        ? 'brand-gradient text-white'
                         : 'bg-white/10 text-gray-300 hover:bg-white/20'
                     }`}
                   >
@@ -1043,7 +1043,7 @@ export default function RegisterPage() {
                     onClick={() => handleMultiSelect('hobbies', hobby)}
                     className={`px-4 py-2 rounded-full font-semibold transition-all text-sm ${
                       formData.hobbies.includes(hobby)
-                        ? 'bg-gradient-to-br from-pink-500 to-pink-600 text-white'
+                        ? 'brand-gradient text-white'
                         : 'bg-white/10 text-gray-300 hover:bg-white/20'
                     }`}
                   >
@@ -1060,7 +1060,7 @@ export default function RegisterPage() {
                 value={formData.aboutMe}
                 onChange={handleChange}
                 rows={4}
-                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-blue-400"
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-[#c6c2ff]"
                 placeholder="Tell us something about yourself..."
               />
             </div>
@@ -1169,7 +1169,7 @@ export default function RegisterPage() {
                     onClick={() => handleMultiSelect('preferredMaritalStatus', status)}
                     className={`px-6 py-3 rounded-full font-semibold transition-all ${
                       formData.preferredMaritalStatus.includes(status)
-                        ? 'bg-gradient-to-br from-pink-500 to-pink-600 text-white'
+                        ? 'brand-gradient text-white'
                         : 'bg-white/10 text-gray-300 hover:bg-white/20'
                     }`}
                   >
@@ -1189,7 +1189,7 @@ export default function RegisterPage() {
                     onClick={() => setFormData({ ...formData, preferredDiet: diet })}
                     className={`px-6 py-3 rounded-full font-semibold transition-all ${
                       formData.preferredDiet === diet
-                        ? 'bg-gradient-to-br from-pink-500 to-pink-600 text-white'
+                        ? 'brand-gradient text-white'
                         : 'bg-white/10 text-gray-300 hover:bg-white/20'
                     }`}
                   >
@@ -1209,7 +1209,7 @@ export default function RegisterPage() {
                     onClick={() => setFormData({ ...formData, preferredSmoking: smoke })}
                     className={`px-6 py-3 rounded-full font-semibold transition-all ${
                       formData.preferredSmoking === smoke
-                        ? 'bg-gradient-to-br from-pink-500 to-pink-600 text-white'
+                        ? 'brand-gradient text-white'
                         : 'bg-white/10 text-gray-300 hover:bg-white/20'
                     }`}
                   >
@@ -1229,7 +1229,7 @@ export default function RegisterPage() {
                     onClick={() => setFormData({ ...formData, preferredDrinking: drink })}
                     className={`px-6 py-3 rounded-full font-semibold transition-all ${
                       formData.preferredDrinking === drink
-                        ? 'bg-gradient-to-br from-pink-500 to-pink-600 text-white'
+                        ? 'brand-gradient text-white'
                         : 'bg-white/10 text-gray-300 hover:bg-white/20'
                     }`}
                   >
@@ -1258,7 +1258,7 @@ export default function RegisterPage() {
             </div>
             <div className="w-full h-2 bg-white/10 rounded-full overflow-hidden">
               <div
-                className="h-full bg-gradient-to-r from-pink-500 to-pink-600 transition-all duration-300"
+                className="h-full brand-gradient transition-all duration-300"
                 style={{ width: `${((currentStep + 1) / STEPS.length) * 100}%` }}
               />
             </div>
@@ -1288,7 +1288,7 @@ export default function RegisterPage() {
               <button
                 onClick={nextStep}
                 disabled={loading}
-                className="flex-1 px-8 py-4 bg-gradient-to-br from-blue-400 to-purple-500 text-white rounded-full font-semibold hover:opacity-90 transition-all enhanced-button disabled:opacity-50"
+                className="flex-1 px-8 py-4 brand-gradient text-white rounded-full font-semibold hover:opacity-90 transition-all enhanced-button disabled:opacity-50 shadow-lg shadow-pink-500/20"
               >
                 Continue
               </button>
@@ -1296,7 +1296,7 @@ export default function RegisterPage() {
               <button
                 onClick={handleSubmit}
                 disabled={loading}
-                className="flex-1 px-8 py-4 bg-gradient-to-br from-blue-400 to-purple-500 text-white rounded-full font-semibold hover:opacity-90 transition-all enhanced-button disabled:opacity-50"
+                className="flex-1 px-8 py-4 brand-gradient text-white rounded-full font-semibold hover:opacity-90 transition-all enhanced-button disabled:opacity-50 shadow-lg shadow-pink-500/20"
               >
                 {loading ? 'Creating Profile...' : 'Complete Profile'}
               </button>
@@ -1306,7 +1306,7 @@ export default function RegisterPage() {
           <div className="mt-6 text-center">
             <p className="text-gray-300">
               Already have an account?{' '}
-              <Link href="/login" className="text-blue-400 hover:text-blue-300 font-semibold">
+              <Link href="/login" className="text-[#c6c2ff] hover:text-[#f7a8d9] font-semibold">
                 Login
               </Link>
             </p>
