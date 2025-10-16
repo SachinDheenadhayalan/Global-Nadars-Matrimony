@@ -47,6 +47,17 @@ export default function SearchPage() {
     // Implement search logic here
   };
 
+  const DASHBOARD_LINKS = [
+    { id: 'matches' as const, href: '/dashboard/matches', label: 'Matches', icon: '💞' },
+    { id: 'search' as const, href: '/dashboard/search', label: 'Search', icon: '🔍' },
+    { id: 'notifications' as const, href: '/dashboard/notifications', label: 'Notifications', icon: '🔔', badge: 1 },
+  ];
+
+  const SEARCH_TABS = [
+    { id: 'regular' as const, label: 'Advanced Search', icon: '🎯' },
+    { id: 'keyword' as const, label: 'Keyword Search', icon: '🔎' },
+  ];
+
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -67,25 +78,26 @@ export default function SearchPage() {
               </div>
             </Link>
 
-            <nav className="hidden md:flex items-center space-x-8">
-              <Link href="/dashboard/matches" className="text-gray-300 hover:text-white transition-colors">
-                Matches
-              </Link>
-              <Link href="/dashboard/search" className="text-white font-semibold border-b-2 border-pink-500 pb-1">
-                Search
-              </Link>
-              <Link href="/dashboard/notifications" className="relative text-gray-300 hover:text-white transition-colors">
-                <span className="flex items-center">
-                  🔔
-                  <span className="absolute -top-1 -right-2 bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">1</span>
+            <nav className="hidden md:flex items-center gap-3">
+              {DASHBOARD_LINKS.map((link) => (
+                <Link
+                  key={link.id}
+                  href={link.href}
+                  className={`nav-chip ${link.id === 'search' ? 'nav-chip-active' : ''}`}
+                >
+                  <span className="text-lg">{link.icon}</span>
+                  <span>{link.label}</span>
+                  {link.badge ? <span className="nav-chip-badge">{link.badge}</span> : null}
+                </Link>
+              ))}
+              <div className="nav-chip pointer-events-none">
+                <span className="text-lg">👤</span>
+                <span className="text-sm font-medium">
+                  {user?.displayName || user?.email}
                 </span>
-              </Link>
-              <div className="flex items-center space-x-2">
-                <span className="text-[#c6c2ff]">👤</span>
-                <span className="text-white font-semibold">{user?.displayName || user?.email}</span>
               </div>
-              <button onClick={handleLogout} className="text-gray-300 hover:text-white transition-colors">
-                Logout
+              <button type="button" onClick={handleLogout} className="nav-chip transition-none">
+                <span className="text-sm font-semibold">Logout</span>
               </button>
             </nav>
           </div>
@@ -100,27 +112,18 @@ export default function SearchPage() {
 
         <div className="max-w-4xl mx-auto">
           {/* Tabs */}
-          <div className="flex mb-8">
-            <button
-              onClick={() => setActiveTab('regular')}
-              className={`flex-1 py-3 font-semibold transition-all ${
-                activeTab === 'regular'
-                  ? 'bg-white text-black'
-                  : 'bg-red-900 text-white hover:bg-red-800'
-              }`}
-            >
-              Regular Search
-            </button>
-            <button
-              onClick={() => setActiveTab('keyword')}
-              className={`flex-1 py-3 font-semibold transition-all ${
-                activeTab === 'keyword'
-                  ? 'bg-white text-black'
-                  : 'bg-red-900 text-white hover:bg-red-800'
-              }`}
-            >
-              Keyword Search
-            </button>
+          <div className="flex flex-col gap-2 mb-8 sm:flex-row sm:gap-3">
+            {SEARCH_TABS.map((tab) => (
+              <button
+                type="button"
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                className={`nav-chip flex-1 justify-center ${activeTab === tab.id ? 'nav-chip-active' : ''}`}
+              >
+                <span className="text-lg">{tab.icon}</span>
+                <span>{tab.label}</span>
+              </button>
+            ))}
           </div>
 
           {/* Search Form */}

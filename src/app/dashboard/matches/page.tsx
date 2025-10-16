@@ -69,6 +69,18 @@ const DUMMY_PROFILES = [
 type TabType = 'matches' | 'search' | 'notifications';
 type NotificationTabType = 'contact' | 'photo' | 'liked';
 
+const DASHBOARD_LINKS = [
+  { id: 'matches' as const, href: '/dashboard/matches', label: 'Matches', icon: '💞' },
+  { id: 'search' as const, href: '/dashboard/search', label: 'Search', icon: '🔍' },
+  { id: 'notifications' as const, href: '/dashboard/notifications', label: 'Notifications', icon: '🔔', badge: 1 },
+];
+
+const TAB_DEFINITIONS: Array<{ id: TabType; label: string; icon: string; description?: string }> = [
+  { id: 'matches', label: 'Matches', icon: '💞', description: 'Curated matches' },
+  { id: 'search', label: 'Search', icon: '🔍', description: 'Quick discovery' },
+  { id: 'notifications', label: 'Alerts', icon: '🔔', description: 'Activity feed' },
+];
+
 export default function MatchesPage() {
   const router = useRouter();
   const [loading, setLoading] = useState(true);
@@ -144,13 +156,26 @@ export default function MatchesPage() {
               </div>
             </Link>
 
-            <nav className="hidden md:flex items-center space-x-8">
-              <div className="flex items-center space-x-2">
-                <span className="text-[#c6c2ff]">👤</span>
-                <span className="text-white font-semibold">{user?.displayName || user?.email}</span>
+            <nav className="hidden md:flex items-center gap-3">
+              {DASHBOARD_LINKS.map((link) => (
+                <Link
+                  key={link.id}
+                  href={link.href}
+                  className={`nav-chip ${link.id === 'matches' ? 'nav-chip-active' : ''}`}
+                >
+                  <span className="text-lg">{link.icon}</span>
+                  <span>{link.label}</span>
+                  {link.badge ? <span className="nav-chip-badge">{link.badge}</span> : null}
+                </Link>
+              ))}
+              <div className="nav-chip pointer-events-none">
+                <span className="text-lg">👤</span>
+                <span className="text-sm font-medium">
+                  {user?.displayName || user?.email}
+                </span>
               </div>
-              <button onClick={handleLogout} className="text-gray-300 hover:text-white transition-colors">
-                Logout
+              <button type="button" onClick={handleLogout} className="nav-chip transition-none">
+                <span className="text-sm font-semibold">Logout</span>
               </button>
             </nav>
           </div>
@@ -160,37 +185,23 @@ export default function MatchesPage() {
       {/* Main Content */}
       <div className="container mx-auto px-4 pt-32 pb-12">
         {/* Tabs */}
-        <div className="flex gap-4 mb-8">
-          <button
-            onClick={() => setActiveTab('matches')}
-            className={`px-6 py-3 rounded-lg font-semibold transition-all ${
-              activeTab === 'matches'
-                ? 'bg-gradient-to-br from-pink-500 to-pink-600 text-white'
-                : 'bg-white/10 text-gray-300 hover:bg-white/20'
-            }`}
-          >
-            Matches
-          </button>
-          <button
-            onClick={() => setActiveTab('search')}
-            className={`px-6 py-3 rounded-lg font-semibold transition-all ${
-              activeTab === 'search'
-                ? 'bg-gradient-to-br from-pink-500 to-pink-600 text-white'
-                : 'bg-white/10 text-gray-300 hover:bg-white/20'
-            }`}
-          >
-            Search
-          </button>
-          <button
-            onClick={() => setActiveTab('notifications')}
-            className={`px-6 py-3 rounded-lg font-semibold transition-all ${
-              activeTab === 'notifications'
-                ? 'bg-gradient-to-br from-pink-500 to-pink-600 text-white'
-                : 'bg-white/10 text-gray-300 hover:bg-white/20'
-            }`}
-          >
-            🔔
-          </button>
+        <div className="flex flex-col gap-2 mb-8 sm:flex-row sm:gap-4">
+          {TAB_DEFINITIONS.map((tab) => (
+            <button
+              type="button"
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              className={`nav-chip flex-1 justify-center ${activeTab === tab.id ? 'nav-chip-active' : ''}`}
+            >
+              <span className="text-lg">{tab.icon}</span>
+              <span>{tab.label}</span>
+              {tab.description ? (
+                <span className="hidden text-xs tracking-widest uppercase text-white/60 sm:inline-block">
+                  {tab.description}
+                </span>
+              ) : null}
+            </button>
+          ))}
         </div>
 
         {/* Content Area */}
@@ -444,36 +455,26 @@ export default function MatchesPage() {
                 <div className="glass-card p-4 sticky top-32">
                   <h3 className="text-xl font-bold text-white mb-4">Notifications</h3>
                   <div className="space-y-2">
-                    <button
-                      onClick={() => setNotificationTab('contact')}
-                      className={`w-full px-4 py-3 rounded-lg font-semibold transition-all text-left ${
-                        notificationTab === 'contact'
-                          ? 'bg-gradient-to-br from-pink-500 to-pink-600 text-white'
-                          : 'bg-white/10 text-gray-300 hover:bg-white/20'
-                      }`}
-                    >
-                      Contact Requests
-                    </button>
-                    <button
-                      onClick={() => setNotificationTab('photo')}
-                      className={`w-full px-4 py-3 rounded-lg font-semibold transition-all text-left ${
-                        notificationTab === 'photo'
-                          ? 'bg-gradient-to-br from-pink-500 to-pink-600 text-white'
-                          : 'bg-white/10 text-gray-300 hover:bg-white/20'
-                      }`}
-                    >
-                      Photo Requests
-                    </button>
-                    <button
-                      onClick={() => setNotificationTab('liked')}
-                      className={`w-full px-4 py-3 rounded-lg font-semibold transition-all text-left ${
-                        notificationTab === 'liked'
-                          ? 'bg-gradient-to-br from-pink-500 to-pink-600 text-white'
-                          : 'bg-white/10 text-gray-300 hover:bg-white/20'
-                      }`}
-                    >
-                      Liked Profiles
-                    </button>
+                    {[
+                      { id: 'contact' as NotificationTabType, label: 'Contact Requests', icon: '📥' },
+                      { id: 'photo' as NotificationTabType, label: 'Photo Requests', icon: '📸' },
+                      { id: 'liked' as NotificationTabType, label: 'Liked Profiles', icon: '💖' },
+                    ].map((tab) => (
+                      <button
+                        key={tab.id}
+                        type="button"
+                        onClick={() => setNotificationTab(tab.id)}
+                        className={`nav-chip w-full justify-between ${notificationTab === tab.id ? 'nav-chip-active' : ''}`}
+                      >
+                        <span className="flex items-center gap-2">
+                          <span className="text-lg">{tab.icon}</span>
+                          <span>{tab.label}</span>
+                        </span>
+                        <span className="text-white/60 text-xs tracking-widest">
+                          {notificationTab === tab.id ? 'LIVE' : '→'}
+                        </span>
+                      </button>
+                    ))}
                   </div>
                 </div>
               </div>

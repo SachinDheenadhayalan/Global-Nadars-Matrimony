@@ -8,6 +8,18 @@ import { onAuthStateChanged, User } from 'firebase/auth';
 
 type NotificationType = 'contact' | 'photo' | 'liked';
 
+const DASHBOARD_LINKS = [
+  { id: 'matches' as const, href: '/dashboard/matches', label: 'Matches', icon: '💞' },
+  { id: 'search' as const, href: '/dashboard/search', label: 'Search', icon: '🔍' },
+  { id: 'notifications' as const, href: '/dashboard/notifications', label: 'Notifications', icon: '🔔', badge: 3 },
+];
+
+const NOTIFICATION_TABS: Array<{ id: NotificationType; label: string; icon: string; badge?: number }> = [
+  { id: 'contact', label: 'Contact Requests', icon: '📥', badge: 1 },
+  { id: 'photo', label: 'Photo Unlocks', icon: '📸', badge: 2 },
+  { id: 'liked', label: 'Favorited You', icon: '💖' },
+];
+
 export default function NotificationsPage() {
   const router = useRouter();
   const [loading, setLoading] = useState(true);
@@ -105,7 +117,7 @@ export default function NotificationsPage() {
                 </div>
                 <div className="text-center mt-2">
                   <div className="text-white font-bold text-lg">{notification.name}</div>
-                  <Link href={`/dashboard/profile/${notification.id}`} className="text-green-400 text-sm">view</Link>
+                  <Link href={`/dashboard/profile/${notification.id}`} className="text-[#c6c2ff] text-sm hover:text-[#f7a8d9] transition-colors">view</Link>
                 </div>
               </div>
 
@@ -135,7 +147,7 @@ export default function NotificationsPage() {
                         <span className="ml-2">{notification.aboutMe}</span>
                       </div>
                       {'mobileNumberSent' in notification && notification.mobileNumberSent && (
-                        <div className="text-green-400 font-semibold">
+                        <div className="text-[#f7a8d9] font-semibold">
                           Mobile Number sent!
                         </div>
                       )}
@@ -164,7 +176,7 @@ export default function NotificationsPage() {
                         <span className="text-gray-400">About me:</span>
                         <span className="ml-2">{notification.aboutMe}</span>
                       </div>
-                      <button className="mt-4 px-6 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg font-semibold transition-all">
+                      <button type="button" className="mt-4 nav-chip nav-chip-active justify-center w-full sm:w-auto">
                         Accept
                       </button>
                     </>
@@ -215,25 +227,26 @@ export default function NotificationsPage() {
               </div>
             </Link>
 
-            <nav className="hidden md:flex items-center space-x-8">
-              <Link href="/dashboard/matches" className="text-gray-300 hover:text-white transition-colors">
-                Matches
-              </Link>
-              <Link href="/dashboard/search" className="text-gray-300 hover:text-white transition-colors">
-                Search
-              </Link>
-              <Link href="/dashboard/notifications" className="relative text-white font-semibold border-b-2 border-pink-500 pb-1">
-                <span className="flex items-center">
-                  🔔
-                  <span className="absolute -top-1 -right-2 bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">1</span>
+            <nav className="hidden md:flex items-center gap-3">
+              {DASHBOARD_LINKS.map((link) => (
+                <Link
+                  key={link.id}
+                  href={link.href}
+                  className={`nav-chip ${link.id === 'notifications' ? 'nav-chip-active' : ''}`}
+                >
+                  <span className="text-lg">{link.icon}</span>
+                  <span>{link.label}</span>
+                  {link.badge ? <span className="nav-chip-badge">{link.badge}</span> : null}
+                </Link>
+              ))}
+              <div className="nav-chip pointer-events-none">
+                <span className="text-lg">👤</span>
+                <span className="text-sm font-medium">
+                  {user?.displayName || user?.email}
                 </span>
-              </Link>
-              <div className="flex items-center space-x-2">
-                <span className="text-[#c6c2ff]">👤</span>
-                <span className="text-white font-semibold">{user?.displayName || user?.email}</span>
               </div>
-              <button onClick={handleLogout} className="text-gray-300 hover:text-white transition-colors">
-                Logout
+              <button type="button" onClick={handleLogout} className="nav-chip transition-none">
+                <span className="text-sm font-semibold">Logout</span>
               </button>
             </nav>
           </div>
@@ -245,44 +258,32 @@ export default function NotificationsPage() {
         <div className="flex gap-8">
           {/* Sidebar */}
           <div className="w-64 flex-shrink-0">
-            <div className="flex items-center mb-8">
-              <Link href="/dashboard/matches" className="text-white mr-4">
-                ←
+            <div className="flex items-center gap-3 mb-8">
+              <Link href="/dashboard/matches" className="nav-chip">
+                <span className="text-sm">← Back</span>
               </Link>
-              <h1 className="text-2xl font-bold text-white">NOTIFICATION</h1>
+              <h1 className="text-2xl font-bold text-white tracking-wide">Notifications</h1>
             </div>
 
-            <div className="space-y-4">
-              <button
-                onClick={() => setActiveTab('contact')}
-                className={`w-full px-6 py-3 rounded-lg font-semibold transition-all ${
-                  activeTab === 'contact'
-                    ? 'bg-pink-900 text-white'
-                    : 'bg-red-900 text-white hover:bg-red-800'
-                }`}
-              >
-                Contact Request
-              </button>
-              <button
-                onClick={() => setActiveTab('photo')}
-                className={`w-full px-6 py-3 rounded-lg font-semibold transition-all ${
-                  activeTab === 'photo'
-                    ? 'bg-pink-900 text-white'
-                    : 'bg-red-900 text-white hover:bg-red-800'
-                }`}
-              >
-                Photo Request
-              </button>
-              <button
-                onClick={() => setActiveTab('liked')}
-                className={`w-full px-6 py-3 rounded-lg font-semibold transition-all ${
-                  activeTab === 'liked'
-                    ? 'bg-pink-900 text-white'
-                    : 'bg-red-900 text-white hover:bg-red-800'
-                }`}
-              >
-                Liked Profile
-              </button>
+            <div className="space-y-3">
+              {NOTIFICATION_TABS.map((tab) => (
+                <button
+                  type="button"
+                  key={tab.id}
+                  onClick={() => setActiveTab(tab.id)}
+                  className={`nav-chip w-full justify-between ${activeTab === tab.id ? 'nav-chip-active' : ''}`}
+                >
+                  <span className="flex items-center gap-2">
+                    <span className="text-lg">{tab.icon}</span>
+                    <span>{tab.label}</span>
+                  </span>
+                  {tab.badge ? (
+                    <span className="nav-chip-badge">{tab.badge}</span>
+                  ) : (
+                    <span className="text-white/60 text-xs tracking-widest">→</span>
+                  )}
+                </button>
+              ))}
             </div>
           </div>
 
